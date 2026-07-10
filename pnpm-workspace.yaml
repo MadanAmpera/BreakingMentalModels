@@ -1,6 +1,17 @@
+# Build-script allowlist. We provide BOTH formats so the native modules
+# (especially better-sqlite3, which Nuxt Content uses at BUILD time to generate
+# the content dump) compile regardless of which pnpm major runs the install:
+#   allowBuilds           -> pnpm 11 (local, and Cloudflare when the pin below is honored)
+#   onlyBuiltDependencies -> pnpm 10 (Cloudflare fallback)
 allowBuilds:
   '@parcel/watcher': true
+  better-sqlite3: true
   esbuild: true
   sharp: true
-  better-sqlite3: true
   workerd: true
+onlyBuiltDependencies:
+  - esbuild
+  - '@parcel/watcher'
+  - sharp
+  - better-sqlite3
+  - workerd
