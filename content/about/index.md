@@ -44,6 +44,9 @@ cta:
   primaryTo: /work-with-me/book
   ghostLabel: Email me
   ghostTo: /connect
+  ghostLinks: []
+downloadBar:
+  links: []
 hero:
   roman: Chapter I · The person
   heading: A thirty-year journey across
@@ -58,6 +61,8 @@ hero:
       val: English · Hindi
     - lab: Domain
       val: Organisational Behaviour
+intro:
+  paragraphs: []
 journey:
   - place: India
     year: "1995"
@@ -80,5 +85,5 @@ portrait:
     - "The story below — the hostel, the four countries, the awards and the long quiet stretches in between — is the long version. The short version is what I tell students on day one: pay attention to the environment you're standing in. It is shaping you, whether or not you've noticed."
   signature: — Ankit
   imageLabel: Portrait — Dr. Agarwal at the lectern
-  image: /Screenshot-2025-04-02-172120.png
+  image: ""
 ---
