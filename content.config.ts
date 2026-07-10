@@ -103,6 +103,83 @@ export default defineContentConfig({
           year: z.string(),
           what: z.string(),
         })).optional(),
+
+        // Scaffold "client to confirm" banner (editable; client can clear it)
+        banner: z.string().optional(),
+
+        // Biography essay opener (prose lives in the markdown body)
+        essay: z.object({
+          backLabel: z.string().optional(),
+          kick: z.string().optional(),
+          heading: z.string().optional(),
+          headingEm: z.string().optional(),
+          dek: z.string().optional(),
+          author: z.string().optional(),
+          readTime: z.string().optional(),
+          updated: z.string().optional(),
+          heroImageLabel: z.string().optional(),
+        }).optional(),
+
+        // CV: video intro + record grid + download bar
+        intro: z.object({
+          videoLabel: z.string().optional(),
+          eyebrow: z.string().optional(),
+          heading: z.string().optional(),
+          paragraphs: z.array(z.string()).optional(),
+          meta: z.array(z.string()).optional(),
+        }).optional(),
+        cvSections: z.array(z.object({
+          title: z.string(),
+          items: z.array(z.object({
+            yr: z.string(),
+            title: z.string(),
+            where: z.string().optional(),
+          })),
+        })).optional(),
+        downloadBar: z.object({
+          label: z.string().optional(),
+          links: z.array(z.object({ label: z.string(), to: z.string() })),
+        }).optional(),
+
+        // Experience: current projects grid + past timeline
+        currentHead: z.object({ rn: z.string(), title: z.string() }).optional(),
+        projects: z.array(z.object({
+          stat: z.string(),
+          title: z.string(),
+          tags: z.string().optional(),
+          body: z.string().optional(),
+          with: z.string().optional(),
+        })).optional(),
+        roadHead: z.object({ rn: z.string(), title: z.string() }).optional(),
+        timeline: z.array(z.object({
+          when: z.string(),
+          title: z.string(),
+          where: z.string().optional(),
+          body: z.string().optional(),
+          active: z.boolean().optional(),
+        })).optional(),
+
+        // Awards: stat grid + grouped honours
+        stats: z.array(z.object({
+          n: z.string(),
+          nAccent: z.string().optional(),
+          lab: z.string(),
+        })).optional(),
+        awardGroups: z.array(z.object({
+          title: z.string(),
+          meta: z.string().optional(),
+          items: z.array(z.object({
+            yr: z.string(),
+            title: z.string(),
+            where: z.string().optional(),
+            badge: z.string().optional(),
+          })),
+        })).optional(),
+        footNote: z.object({
+          text: z.string(),
+          linkLabel: z.string().optional(),
+          linkTo: z.string().optional(),
+        }).optional(),
       }),
     }),
 

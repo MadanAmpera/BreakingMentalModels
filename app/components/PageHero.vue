@@ -27,6 +27,7 @@ defineProps<{
           <span class="lab">{{ m.lab }}</span><span class="val">{{ m.val }}</span>
         </div>
       </div>
+      <slot />
     </div>
   </header>
 </template>
