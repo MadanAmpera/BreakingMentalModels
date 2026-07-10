@@ -431,5 +431,69 @@ export default defineContentConfig({
       }),
     }),
 
+    // ── Connect (Chapter VII): contact landing + FAQ ───────────────────────
+    connect: defineCollection({
+      type: 'page',
+      source: 'connect/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        chapterIndex,
+        banner: z.string().optional(),
+        secA: secHead,
+        secB: secHead,
+        secC: secHead,
+        secD: secHead,
+        secE: secHead,
+
+        // Landing: contact channels, audience split, socials hub, travel schedule
+        channels: z.array(z.object({
+          lab: z.string(),
+          val: z.string(),
+          body: z.string().optional(),
+        })).optional(),
+        audiences: z.array(z.object({
+          ey: z.string().optional(),
+          heading: z.string(),
+          body: z.string().optional(),
+          items: z.array(z.object({ term: z.string(), desc: z.string() })).optional(),
+          linkLabel: z.string().optional(),
+          linkTo: z.string().optional(),
+        })).optional(),
+        hub: z.object({
+          title: z.string().optional(),
+          body: z.string().optional(),
+          ctaLabel: z.string().optional(),
+          ctaTo: z.string().optional(),
+        }).optional(),
+        socials: z.array(z.object({
+          p: z.string(),
+          d: z.string().optional(),
+          to: z.string().optional(),
+        })).optional(),
+        travelBanner: z.string().optional(),
+        travelPin: z.string().optional(),
+        travel: z.array(z.object({
+          city: z.string(),
+          note: z.string().optional(),
+          date: z.string().optional(),
+        })).optional(),
+
+        // FAQ: grouped accordions (answer is plain prose + an optional trailing link)
+        faqGroups: z.array(z.object({
+          title: z.string(),
+          items: z.array(z.object({
+            q: z.string(),
+            a: z.string(),
+            linkLabel: z.string().optional(),
+            linkTo: z.string().optional(),
+            open: z.boolean().optional(),
+          })),
+        })).optional(),
+      }),
+    }),
+
   },
 })
