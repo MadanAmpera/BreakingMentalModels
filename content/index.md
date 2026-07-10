@@ -1,5 +1,5 @@
 ---
-title: Breaking Mental Model — Dr. Ankit Agarwal
+title: Breaking Mental Models — Dr. Ankit Agarwal
 byline: Education, research & honest conversation — on the environments that shape us.
 contentsYear: "2026"
 ctaDisplay: Say the thing. Have the conversation. Break the model.
@@ -21,9 +21,6 @@ headingLine1: Breaking
 headingLine2: Mental
 imprint: Adelaide, South Australia · Est. MMXXVI
 kicker: An academic platform by Dr. Ankit Agarwal
-seo:
-  title: Breaking Mental Models — Dr. Ankit Agarwal
-  description: ""
 tiles:
   - roman: I
     countBold: "01"
