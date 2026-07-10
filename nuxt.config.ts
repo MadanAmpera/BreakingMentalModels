@@ -28,4 +28,22 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  nitro: {
+    // Cloudflare Pages deployment (Nitro preset). autoSubfolderIndex:false so
+    // Cloudflare's route matching serves /about/ style routes correctly.
+    preset: 'cloudflare_pages',
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+  },
+
+  content: {
+    // Local dev uses better-sqlite3; production on Cloudflare uses a D1
+    // database bound as "DB" (create it in the Cloudflare dashboard).
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
+  },
 })
