@@ -25,7 +25,7 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
         <div class="portrait">
-          <div class="ph" :data-label="page.portrait?.imageLabel" />
+          <Figure :src="page.portrait?.image" :label="page.portrait?.imageLabel" />
           <div class="body">
             <span class="eyebrow-block">{{ page.portrait?.eyebrow }}</span>
             <h2>{{ page.portrait?.heading }} <em v-if="page.portrait?.headingEm">{{ page.portrait.headingEm }}</em></h2>

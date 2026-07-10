@@ -28,9 +28,9 @@ const crumb = [
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
         <div v-if="page.intro" class="intro">
-          <div class="ph" :data-label="page.intro.videoLabel">
+          <Figure :src="page.intro.image" :label="page.intro.videoLabel">
             <div class="play">▶</div>
-          </div>
+          </Figure>
           <div class="body">
             <span class="eyebrow">{{ page.intro.eyebrow }}</span>
             <h2>{{ page.intro.heading }}</h2>

@@ -70,6 +70,7 @@ export default defineContentConfig({
         featureLinkLabel: z.string().optional(),
         featureLinkTo: z.string().optional(),
         featureImageLabel: z.string().optional(),
+        featureImage: z.string().optional(),
         ctaEyebrow: z.string().optional(),
         ctaDisplay: z.string().optional(),
         ctaPrimaryLabel: z.string().optional(),
@@ -97,6 +98,7 @@ export default defineContentConfig({
           paragraphs: z.array(z.string()).optional(),
           signature: z.string().optional(),
           imageLabel: z.string().optional(),
+          image: z.string().optional(),
         }).optional(),
         journey: z.array(z.object({
           place: z.string(),
@@ -118,11 +120,13 @@ export default defineContentConfig({
           readTime: z.string().optional(),
           updated: z.string().optional(),
           heroImageLabel: z.string().optional(),
+          image: z.string().optional(),
         }).optional(),
 
         // CV: video intro + record grid + download bar
         intro: z.object({
           videoLabel: z.string().optional(),
+          image: z.string().optional(),
           eyebrow: z.string().optional(),
           heading: z.string().optional(),
           paragraphs: z.array(z.string()).optional(),

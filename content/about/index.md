@@ -76,9 +76,9 @@ portrait:
   heading: Be honest, or
   headingEm: don't bother.
   paragraphs:
-    - I'm a researcher and educator working on the human side of work — psychosocial safety, reflexivity, leadership, and how teaching changes the people we ask to learn.
-    - The story below — the hostel, the four countries, the awards and the long quiet stretches in between — is the long version:
-        " The short version is what I tell students on day one": pay attention to the environment you're standing in. It is shaping you, whether or not you've noticed.
+    - "I'm a researcher and educator working on the human side of work — psychosocial safety, reflexivity, leadership, and how teaching changes the people we ask to learn."
+    - "The story below — the hostel, the four countries, the awards and the long quiet stretches in between — is the long version. The short version is what I tell students on day one: pay attention to the environment you're standing in. It is shaping you, whether or not you've noticed."
   signature: — Ankit
-  imageLabel: /default-avatar.png
+  imageLabel: Portrait — Dr. Agarwal at the lectern
+  image: /default-avatar.png
 ---

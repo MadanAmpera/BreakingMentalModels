@@ -27,7 +27,7 @@ useSeoMeta({
       </div>
     </header>
 
-    <div class="ph hero-img" :data-label="page.essay?.heroImageLabel" />
+    <Figure class="hero-img" :src="page.essay?.image" :label="page.essay?.heroImageLabel" />
 
     <article class="section" style="padding-block: clamp(48px, 7vw, 88px);">
       <div class="article">

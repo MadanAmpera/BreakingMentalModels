@@ -67,7 +67,7 @@ useSeoMeta({
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
         <div class="feature">
-          <div class="ph" :data-label="page.featureImageLabel" />
+          <Figure :src="page.featureImage" :label="page.featureImageLabel" />
           <div class="body">
             <span class="eyebrow">{{ page.featureEyebrow }}</span>
             <h2 class="h2" style="margin: 14px 0; max-width: 16ch;">{{ page.featureHeading }}</h2>
