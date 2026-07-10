@@ -29,6 +29,16 @@ const secHead = z.object({
   id: z.string().optional(),
 }).optional()
 
+// Testimonial card (Voices). `name` renders plain; `nameNote` renders in the
+// muted "client-note" style used for TBC scaffold placeholders.
+const testimonialCard = z.object({
+  quote: z.string(),
+  name: z.string().optional(),
+  nameNote: z.string().optional(),
+  role: z.string().optional(),
+  avatar: z.string().optional(),
+})
+
 const chapterNav = z.object({
   prev: z.object({ to: z.string(), title: z.string(), label: z.string().optional() }).optional(),
   next: z.object({ to: z.string(), title: z.string(), label: z.string().optional() }).optional(),
@@ -379,6 +389,45 @@ export default defineContentConfig({
           pullQuote: z.string().optional(),
           attribution: z.string().optional(),
         }).optional(),
+      }),
+    }),
+
+    // ── Voices (Chapter VI): single page — testimonials + student feedback ─
+    voices: defineCollection({
+      type: 'page',
+      source: 'voices/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        banner: z.string().optional(),
+        stats: z.array(z.object({
+          n: z.string(),
+          nAccent: z.string().optional(),
+          lab: z.string(),
+        })).optional(),
+        // Featured testimonial (optional accent phrase via pre/em/post)
+        feat: z.object({
+          quotePre: z.string().optional(),
+          quoteEm: z.string().optional(),
+          quotePost: z.string().optional(),
+          byLabel: z.string().optional(),
+          byNote: z.string().optional(),
+        }).optional(),
+        secA: secHead,
+        secB: secHead,
+        orgTestimonials: z.array(testimonialCard).optional(),
+        // Student video cards (thumbnails are placeholders → YouTube/Vimeo later)
+        videos: z.array(z.object({
+          quote: z.string(),
+          name: z.string().optional(),
+          nameNote: z.string().optional(),
+          suffix: z.string().optional(),
+          image: z.string().optional(),
+          label: z.string().optional(),
+        })).optional(),
+        studentTestimonials: z.array(testimonialCard).optional(),
       }),
     }),
 
