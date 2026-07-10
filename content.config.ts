@@ -613,5 +613,121 @@ export default defineContentConfig({
       }),
     }),
 
+    // ── Education Hub (Chapter III): landing + theory guide, video lessons ──
+    educationhub: defineCollection({
+      type: 'page',
+      source: 'education-hub/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        chapterIndex,
+        banner: z.string().optional(),
+        stats: z.array(z.object({
+          n: z.string(),
+          nAccent: z.string().optional(),
+          lab: z.string(),
+        })).optional(),
+
+        // Landing: opening doctrine, three-level theory columns, video preview
+        doctrine: z.object({
+          eyebrow: z.string().optional(),
+          headA: z.string().optional(),
+          em1: z.string().optional(),
+          headB: z.string().optional(),
+          em2: z.string().optional(),
+          headC: z.string().optional(),
+          paragraphs: z.array(z.string()).optional(),
+        }).optional(),
+        levels: z.array(z.object({
+          lab: z.string(),
+          rn: z.string(),
+          title: z.string(),
+          desc: z.string().optional(),
+          ct: z.string().optional(),
+          cat: z.enum(['i', 'g', 'o']),
+          theories: z.array(z.object({
+            num: z.string(),
+            title: z.string(),
+            sub: z.string().optional(),
+            summ: z.string().optional(),
+            tags: z.array(z.string()).optional(),
+          })),
+        })).optional(),
+        videoPreview: z.object({
+          rn: z.string().optional(),
+          heading: z.string().optional(),
+          lead: z.string().optional(),
+          lessons: z.array(z.object({
+            label: z.string().optional(),
+            cat: z.enum(['i', 'g', 'o']),
+            title: z.string(),
+            when: z.string().optional(),
+          })).optional(),
+          primaryLabel: z.string().optional(),
+          primaryTo: z.string().optional(),
+          ghostLabel: z.string().optional(),
+          ghostTo: z.string().optional(),
+        }).optional(),
+
+        // Theory guide: legend + alphabetical letter sections
+        legend: z.array(z.object({ cat: z.enum(['i', 'g', 'o']), label: z.string() })).optional(),
+        legendCount: z.string().optional(),
+        letterSections: z.array(z.object({
+          letter: z.string(),
+          ct: z.string().optional(),
+          entries: z.array(z.object({
+            name: z.string(),
+            who: z.string().optional(),
+            summ: z.string().optional(),
+            level: z.enum(['i', 'g', 'o']),
+          })),
+        })).optional(),
+        footNote: z.string().optional(),
+
+        // Video lessons: featured player + lesson grid + playlists
+        feature: z.object({
+          label: z.string().optional(),
+          time: z.string().optional(),
+          progress: z.string().optional(),
+          image: z.string().optional(),
+          lvl: z.string().optional(),
+          titlePre: z.string().optional(),
+          titleEm: z.string().optional(),
+          titlePost: z.string().optional(),
+          body: z.string().optional(),
+          meta: z.array(z.string()).optional(),
+          primaryLabel: z.string().optional(),
+          primaryTo: z.string().optional(),
+          ghostLabel: z.string().optional(),
+          ghostTo: z.string().optional(),
+        }).optional(),
+        railCount: z.string().optional(),
+        lessons: z.array(z.object({
+          cat: z.enum(['i', 'g', 'o']),
+          theory: z.string().optional(),
+          title: z.string(),
+          lesson: z.string().optional(),
+          when: z.string().optional(),
+          dur: z.string().optional(),
+          label: z.string().optional(),
+          image: z.string().optional(),
+        })).optional(),
+        lessonsNote: z.string().optional(),
+        playlistHead: z.string().optional(),
+        playlists: z.array(z.object({
+          cat: z.enum(['i', 'g', 'o']),
+          count: z.string().optional(),
+          dur: z.string().optional(),
+          name: z.string().optional(),
+          title: z.string(),
+          best: z.string().optional(),
+          updated: z.string().optional(),
+          label: z.string().optional(),
+        })).optional(),
+      }),
+    }),
+
   },
 })
