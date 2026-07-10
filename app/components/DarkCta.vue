@@ -9,6 +9,8 @@ withDefaults(defineProps<{
   primaryTo?: string
   ghostLabel?: string
   ghostTo?: string
+  // Extra ghost buttons rendered as plain external links (e.g. Scholar, ORCID)
+  ghostLinks?: { label: string, to?: string }[]
 }>(), {
   displayMax: '18ch',
 })
@@ -22,7 +24,7 @@ withDefaults(defineProps<{
         {{ display }}<template v-if="displayAccent"> <span class="d-accent">{{ displayAccent }}</span></template>
       </p>
       <p v-if="lead" class="lead" style="max-width: 48ch; margin: 20px auto 0;">{{ lead }}</p>
-      <div v-if="primaryLabel || ghostLabel" style="display: flex; gap: 14px; justify-content: center; margin-top: 32px; flex-wrap: wrap;">
+      <div v-if="primaryLabel || ghostLabel || ghostLinks?.length" style="display: flex; gap: 14px; justify-content: center; margin-top: 32px; flex-wrap: wrap;">
         <NuxtLink v-if="primaryLabel" class="btn btn-primary" :to="primaryTo" style="border-radius: 0;">
           {{ primaryLabel }} <span class="arrow">→</span>
         </NuxtLink>
@@ -34,6 +36,15 @@ withDefaults(defineProps<{
         >
           {{ ghostLabel }}
         </NuxtLink>
+        <a
+          v-for="(g, i) in ghostLinks"
+          :key="i"
+          class="btn btn-ghost"
+          :href="g.to"
+          style="color: var(--ink-on-dark); border-color: var(--line-dark); border-radius: 0;"
+        >
+          {{ g.label }}
+        </a>
       </div>
     </div>
   </section>

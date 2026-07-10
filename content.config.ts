@@ -19,6 +19,7 @@ const cta = z.object({
   primaryTo: z.string().optional(),
   ghostLabel: z.string().optional(),
   ghostTo: z.string().optional(),
+  ghostLinks: z.array(z.object({ label: z.string(), to: z.string().optional() })).optional(),
 }).optional()
 
 // Section heading (roman rn + title, optional lead + anchor id) — reused a lot.
@@ -492,6 +493,123 @@ export default defineContentConfig({
             open: z.boolean().optional(),
           })),
         })).optional(),
+      }),
+    }),
+
+    // ── Research (Chapter II): landing + publications, media, interviews,
+    //    invitations. Citation/author lines are plain editable strings. ─────
+    research: defineCollection({
+      type: 'page',
+      source: 'research/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        chapterIndex,
+        banner: z.string().optional(),
+        secA: secHead,
+        secB: secHead,
+        secC: secHead,
+        stats: z.array(z.object({
+          n: z.string(),
+          nAccent: z.string().optional(),
+          lab: z.string(),
+        })).optional(),
+
+        // Landing: four pillars + featured publication
+        pillars: z.array(z.object({
+          rn: z.string(),
+          title: z.string(),
+          body: z.string(),
+          ct: z.string().optional(),
+        })).optional(),
+        featured: z.object({
+          imageLabel: z.string().optional(),
+          image: z.string().optional(),
+          eyebrow: z.string().optional(),
+          title: z.string(),
+          lede: z.string().optional(),
+          auth: z.string().optional(),
+          primaryLabel: z.string().optional(),
+          primaryTo: z.string().optional(),
+          ghostLabel: z.string().optional(),
+          ghostTo: z.string().optional(),
+        }).optional(),
+
+        // Publications: grouped citation list + download bar
+        pubGroups: z.array(z.object({
+          title: z.string(),
+          ct: z.string().optional(),
+          items: z.array(z.object({
+            year: z.string(),
+            type: z.string().optional(),
+            title: z.string(),
+            auth: z.string().optional(),
+            badges: z.array(z.object({ label: z.string(), ft50: z.boolean().optional() })).optional(),
+          })),
+        })).optional(),
+        downloadBar: z.object({
+          label: z.string().optional(),
+          links: z.array(z.object({ label: z.string(), to: z.string().optional() })),
+        }).optional(),
+
+        // Media: metric block + press features + citing works
+        metrics: z.array(z.object({
+          n: z.string(),
+          nAccent: z.string().optional(),
+          lab: z.string(),
+          src: z.string().optional(),
+        })).optional(),
+        press: z.array(z.object({
+          outlet: z.string(),
+          date: z.string().optional(),
+          title: z.string(),
+          kind: z.string().optional(),
+          to: z.string().optional(),
+        })).optional(),
+        citing: z.array(z.object({
+          cap: z.string().optional(),
+          title: z.string(),
+          auth: z.string().optional(),
+        })).optional(),
+        citingNote: z.object({
+          text: z.string(),
+          linkLabel: z.string().optional(),
+          linkTo: z.string().optional(),
+        }).optional(),
+
+        // Interviews: appearance list
+        ivHead: z.object({ label: z.string(), count: z.string().optional() }).optional(),
+        interviews: z.array(z.object({
+          imageLabel: z.string().optional(),
+          image: z.string().optional(),
+          show: z.string().optional(),
+          title: z.string(),
+          with: z.string().optional(),
+          topics: z.array(z.string()).optional(),
+          when: z.string().optional(),
+          dur: z.string().optional(),
+          to: z.string().optional(),
+        })).optional(),
+
+        // Invitations: grouped engagements + available talks
+        invGroups: z.array(z.object({
+          title: z.string(),
+          ct: z.string().optional(),
+          items: z.array(z.object({
+            kind: z.string().optional(),
+            date: z.string().optional(),
+            title: z.string(),
+            venue: z.string().optional(),
+            where: z.string().optional(),
+            future: z.boolean().optional(),
+          })),
+        })).optional(),
+        topicsCard: z.object({
+          title: z.string().optional(),
+          talks: z.array(z.object({ t: z.string(), desc: z.string().optional() })),
+        }).optional(),
       }),
     }),
 
