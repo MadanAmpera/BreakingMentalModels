@@ -46,4 +46,14 @@ export default defineNuxtConfig({
       bindingName: 'DB',
     },
   },
+
+  studio: {
+    // GitHub repository backing the CMS (Nuxt Studio commits content here).
+    repository: {
+      provider: 'github',
+      owner: 'MadanAmpera',
+      repo: 'BreakingMentalModels',
+      branch: 'main',
+    },
+  },
 })
