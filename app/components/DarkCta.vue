@@ -3,6 +3,7 @@ withDefaults(defineProps<{
   eyebrow?: string
   display?: string
   displayMax?: string
+  lead?: string
   primaryLabel?: string
   primaryTo?: string
   ghostLabel?: string
@@ -17,6 +18,7 @@ withDefaults(defineProps<{
     <div class="wrap">
       <span v-if="eyebrow" class="eyebrow">{{ eyebrow }}</span>
       <p class="display" :style="{ maxWidth: displayMax, margin: '18px auto 0' }">{{ display }}</p>
+      <p v-if="lead" class="lead" style="max-width: 48ch; margin: 20px auto 0;">{{ lead }}</p>
       <div style="display: flex; gap: 14px; justify-content: center; margin-top: 32px; flex-wrap: wrap;">
         <NuxtLink v-if="primaryLabel" class="btn btn-primary" :to="primaryTo" style="border-radius: 0;">
           {{ primaryLabel }} <span class="arrow">→</span>

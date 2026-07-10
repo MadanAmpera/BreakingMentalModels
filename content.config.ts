@@ -13,6 +13,7 @@ const cta = z.object({
   eyebrow: z.string().optional(),
   display: z.string().optional(),
   displayMax: z.string().optional(),
+  lead: z.string().optional(),
   primaryLabel: z.string().optional(),
   primaryTo: z.string().optional(),
   ghostLabel: z.string().optional(),
@@ -183,6 +184,112 @@ export default defineContentConfig({
           text: z.string(),
           linkLabel: z.string().optional(),
           linkTo: z.string().optional(),
+        }).optional(),
+      }),
+    }),
+
+    // ── Work With Me (Chapter IV): landing + services, engagement, book ─────
+    workwithme: defineCollection({
+      type: 'page',
+      source: 'work-with-me/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        chapterIndex,
+        banner: z.string().optional(),
+
+        // Landing: intro sections, ice→water thesis, variables, four domains
+        secA: z.object({ rn: z.string(), heading: z.string(), lead: z.string().optional() }).optional(),
+        secB: z.object({ rn: z.string(), heading: z.string(), lead: z.string().optional() }).optional(),
+        secC: z.object({ rn: z.string(), heading: z.string(), lead: z.string().optional() }).optional(),
+        thesis: z.object({
+          imageLabel: z.string().optional(),
+          image: z.string().optional(),
+          eyebrow: z.string().optional(),
+          headingPre: z.string().optional(),
+          headingEm: z.string().optional(),
+          headingPost: z.string().optional(),
+          paragraph: z.string().optional(),
+          emphasis: z.string().optional(),
+        }).optional(),
+        vars: z.array(z.object({
+          lab: z.string(),
+          heading: z.string(),
+          body: z.string(),
+        })).optional(),
+        domains: z.array(z.object({
+          rn: z.string(),
+          title: z.string(),
+          body: z.string(),
+          ct: z.string().optional(),
+        })).optional(),
+
+        // Services: two grouped chapters of services + a services-at-a-glance table
+        serviceGroups: z.array(z.object({
+          rn: z.string(),
+          title: z.string(),
+          count: z.string().optional(),
+          lead: z.string().optional(),
+          services: z.array(z.object({
+            rn: z.string(),
+            id: z.string().optional(),
+            title: z.string(),
+            intro: z.string(),
+            focus: z.array(z.object({ term: z.string(), desc: z.string() })),
+            timeline: z.array(z.object({ d: z.string(), w: z.string() })),
+            bestFor: z.string().optional(),
+          })),
+        })).optional(),
+        glance: z.object({
+          rn: z.string().optional(),
+          heading: z.string(),
+          lead: z.string().optional(),
+          rows: z.array(z.object({
+            service: z.string(),
+            focus: z.string(),
+            timeline: z.string(),
+          })),
+        }).optional(),
+
+        // Engagement: three models, approach steps, who-we-work-with, principle panel
+        models: z.array(z.object({
+          rn: z.string(),
+          title: z.string(),
+          body: z.string(),
+          tag: z.string().optional(),
+        })).optional(),
+        modelsNote: z.string().optional(),
+        approach: z.array(z.object({
+          s: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+        who: z.array(z.object({
+          n: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+        principle: z.object({
+          eyebrow: z.string().optional(),
+          displayPre: z.string().optional(),
+          displayEm: z.string().optional(),
+          displayPost: z.string().optional(),
+          lead: z.string().optional(),
+          ctaLabel: z.string().optional(),
+          ctaTo: z.string().optional(),
+        }).optional(),
+
+        // Book: "what to expect" strip (the scheduler itself is a static mock-up)
+        expect: z.array(z.object({
+          n: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+        booker: z.object({
+          rn: z.string().optional(),
+          heading: z.string().optional(),
         }).optional(),
       }),
     }),
