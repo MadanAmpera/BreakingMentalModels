@@ -12,12 +12,21 @@ const hero = z.object({
 const cta = z.object({
   eyebrow: z.string().optional(),
   display: z.string().optional(),
+  displayAccent: z.string().optional(),
   displayMax: z.string().optional(),
   lead: z.string().optional(),
   primaryLabel: z.string().optional(),
   primaryTo: z.string().optional(),
   ghostLabel: z.string().optional(),
   ghostTo: z.string().optional(),
+}).optional()
+
+// Section heading (roman rn + title, optional lead + anchor id) — reused a lot.
+const secHead = z.object({
+  rn: z.string(),
+  heading: z.string(),
+  lead: z.string().optional(),
+  id: z.string().optional(),
 }).optional()
 
 const chapterNav = z.object({
@@ -290,6 +299,85 @@ export default defineContentConfig({
         booker: z.object({
           rn: z.string().optional(),
           heading: z.string().optional(),
+        }).optional(),
+      }),
+    }),
+
+    // ── Podcast (Chapter V): landing + episodes, be-a-guest, philosophy ─────
+    podcast: defineCollection({
+      type: 'page',
+      source: 'podcast/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterNav,
+        chapterIndex,
+        banner: z.string().optional(),
+        secA: secHead,
+        secB: secHead,
+        secC: secHead,
+
+        // Landing: featured episode player + three anchors
+        featured: z.object({
+          artLabel: z.string().optional(),
+          image: z.string().optional(),
+          epNo: z.string().optional(),
+          title: z.string(),
+          body: z.string().optional(),
+          credits: z.array(z.object({ label: z.string(), accent: z.boolean().optional() })).optional(),
+          primaryLabel: z.string().optional(),
+          primaryTo: z.string().optional(),
+          ghostLabel: z.string().optional(),
+          ghostTo: z.string().optional(),
+        }).optional(),
+        anchors: z.array(z.object({
+          n: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+
+        // Episodes: live episode card + pipeline list
+        liveHead: z.object({ label: z.string(), count: z.string().optional() }).optional(),
+        live: z.object({
+          artLabel: z.string().optional(),
+          image: z.string().optional(),
+          status: z.string().optional(),
+          title: z.string(),
+          body: z.string().optional(),
+          listenLabel: z.string().optional(),
+          listenTo: z.string().optional(),
+          recorded: z.string().optional(),
+          details: z.array(z.object({ h: z.string(), p: z.string() })).optional(),
+        }).optional(),
+        pipelineHead: z.object({ label: z.string(), count: z.string().optional() }).optional(),
+        pipeline: z.array(z.object({
+          no: z.string(),
+          status: z.string().optional(),
+          title: z.string(),
+          desc: z.string().optional(),
+          guest: z.string().optional(),
+        })).optional(),
+
+        // Be a guest: how-it-works steps + elephant list (pitch form is a static mock)
+        steps: z.array(z.object({
+          n: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+        elephants: z.array(z.object({
+          n: z.string(),
+          title: z.string(),
+          body: z.string(),
+        })).optional(),
+
+        // Philosophy: prose lives in the markdown body; this is the format grid + coda
+        format: z.object({
+          title: z.string().optional(),
+          steps: z.array(z.object({ s: z.string(), h: z.string(), p: z.string() })).optional(),
+          closer: z.string().optional(),
+          pullQuote: z.string().optional(),
+          attribution: z.string().optional(),
         }).optional(),
       }),
     }),
