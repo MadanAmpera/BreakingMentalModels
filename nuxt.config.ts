@@ -1,0 +1,31 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  compatibilityDate: '2025-07-01',
+  devtools: { enabled: true },
+
+  modules: [
+    '@nuxt/content',
+    'nuxt-studio',
+  ],
+
+  // Global design system (ported from the Prototype1 design)
+  css: [
+    '~/assets/css/bmm.css',
+    '~/assets/css/bmm-site.css',
+  ],
+
+  app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      script: [
+        {
+          // Pre-paint theme application — mirrors the design's inline <head> snippet.
+          // Applies the saved theme before first paint to avoid a flash of the wrong theme.
+          innerHTML:
+            "(function(){try{var t=localStorage.getItem('bmm-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();",
+          tagPosition: 'head',
+        },
+      ],
+    },
+  },
+})
