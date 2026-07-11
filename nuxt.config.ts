@@ -45,6 +45,12 @@ export default defineNuxtConfig({
       type: 'd1',
       bindingName: 'DB',
     },
+    renderer: {
+      // The design's prose headings are plain text, not links. Disable the
+      // auto-generated <a> anchor inside every heading so h3/h4 don't render
+      // as orange hyperlinks (e.g. the "§ III — …" kickers in the biography).
+      anchorLinks: false,
+    },
   },
 
   studio: {

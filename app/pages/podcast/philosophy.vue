@@ -85,8 +85,10 @@ const crumb = [
   letter-spacing: 0.04em;
 }
 
-/* Drop cap on the first rendered paragraph (mirrors the biography essay) */
-.article :deep(p:first-of-type)::first-letter {
+/* Drop cap on the essay's opening paragraph only. Scoped to the first
+   direct-child <p> of the ContentRenderer wrapper so it never leaks into
+   nested paragraphs (pull quotes, the appended format coda). */
+.article :deep([data-content-id] > p:first-of-type)::first-letter {
   font-family: var(--serif);
   font-weight: 500;
   font-size: 5.6em;

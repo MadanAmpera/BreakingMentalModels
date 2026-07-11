@@ -109,8 +109,22 @@ useSeoMeta({
   border-radius: 0;
 }
 
-/* Drop cap on the first rendered paragraph (mirrors .article p.first) */
-.article :deep(p:first-of-type)::first-letter {
+/* Signature caption — the "Adelaide · May 2026" line under the "— A. A."
+   sign-off renders as a small mono caption, not the large pull serif. */
+.article :deep(.sig-cap) {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Drop cap on the essay's opening paragraph only (mirrors .article p.first).
+   Scoped to the first direct-child <p> of the ContentRenderer wrapper so it
+   never leaks into nested paragraphs (note-aside bodies, pull quotes). */
+.article :deep([data-content-id] > p:first-of-type)::first-letter {
   font-family: var(--serif);
   font-weight: 500;
   font-size: 5.6em;

@@ -70,5 +70,5 @@ If there is a single sentence the last thirty years have taught me, it is this: 
 I am still learning, slowly, what that means for how I teach, how I research, and how I show up — in the lecture hall, in front of a microphone, and in the quiet 4 a.m. silence I still occasionally find myself in.
 
 ::pull
-— A. A.<br>Adelaide · May 2026
+— A. A.<br>[Adelaide · May 2026]{.sig-cap}
 ::
