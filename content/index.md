@@ -26,14 +26,14 @@ tiles:
     countBold: "01"
     countText: The person
     title: About
-    description: From a hostel in Adelaide to the world stage — the story, the CV, and what a thirty-year journey across four countries taught me about resilience.
+    description: From a hostel in Adelaide to the world stage — the story, the CV, and what a thirty-year journey across five countries taught me about resilience.
     foot: Biography · CV · Awards
     to: /about
   - roman: II
-    countBold: 40+
+    countBold: 46+
     countText: Publications
     title: Research
-    description: Publications across four pillars — psychosocial safety, reflexivity, leadership, and teaching — including FT50 and Academy of Management work.
+    description: Publications across four pillars — creative reflexivity, teaching & learning, leadership & teams, and people & organisations — including FT50 and Academy of Management work.
     foot: Papers · Media · Interviews
     to: /research
   - roman: III

@@ -7,7 +7,7 @@ chapterIndex:
     - rn: i
       to: /about/biography
       title: Biography & story
-      desc: The long version — the hostel, the four countries, the resilience built and rebuilt. Written as an essay, not a bullet list.
+      desc: The long version — the hostel, the five countries, the resilience built and rebuilt. Written as an essay, not a bullet list.
       count: 6 min
       unit: essay
     - rn: ii
@@ -50,7 +50,7 @@ downloadBar:
 hero:
   roman: Chapter I · The person
   heading: A thirty-year journey across
-  headingAccent: four countries.
+  headingAccent: five countries.
   lede: From a hostel in Adelaide to FT50 publications and the Academy of Management — and the practice of teaching, researching, and writing about what shapes us, in the open.
   meta:
     - lab: Currently
@@ -65,24 +65,24 @@ intro:
   paragraphs: []
 journey:
   - place: India
-    year: "1995"
-    what: First questions about why people do what they do
-  - place: Singapore
-    year: "2008"
-    what: First lectures, first awards
-  - place: United Kingdom
-    year: "2014"
-    what: PhD & the start of the FT50 work
+    year: Early years
+    what: Cricket, family, and the first questions about ambition and title
+  - place: Ireland & UK
+    year: "2003 – 2008"
+    what: A Diploma and Bachelor's in Dublin, a Master's in the UK
+  - place: India & USA
+    year: "2008 – 2014"
+    what: A decade in sales and business development, then an H1B visa and a lawsuit
   - place: Australia
-    year: "2019"
-    what: Adelaide, present day
+    year: 2015 – present
+    what: A hostel, 350 job applications, and a lecturing post from 2021
 portrait:
   eyebrow: An introduction, briefly
   heading: Be honest, or
   headingEm: don't bother.
   paragraphs:
     - I'm a researcher and educator working on the human side of work — psychosocial safety, reflexivity, leadership, and how teaching changes the people we ask to learn.
-    - "The story below — the hostel, the four countries, the awards and the long quiet stretches in between — is the long version. The short version is what I tell students on day one: pay attention to the environment you're standing in. It is shaping you, whether or not you've noticed."
+    - "The story below — the hostel, the five countries, the awards and the long quiet stretches in between — is the long version. The short version is what I tell students on day one: pay attention to the environment you're standing in. It is shaping you, whether or not you've noticed."
   signature: — Ankit
   imageLabel: Portrait — Dr. Agarwal at the lectern
   image: ""

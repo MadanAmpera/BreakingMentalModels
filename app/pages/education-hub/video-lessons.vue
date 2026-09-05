@@ -29,6 +29,8 @@ const levelName: Record<string, string> = { i: 'Individual', g: 'Group', o: 'Org
 
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
+        <p v-if="page.banner" class="client-banner">{{ page.banner }}</p>
+
         <!-- Featured player -->
         <div v-if="page.feature" class="feature">
           <div class="player">
