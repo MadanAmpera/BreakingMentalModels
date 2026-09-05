@@ -2,15 +2,14 @@
 title: Research
 hero:
   roman: Chapter II · The scholarship
-  heading: Forty papers,
+  heading: Forty-six papers,
   headingAccent: four questions.
   lede: All of the research on this site is, at its core, an attempt to answer four questions about how the environments of work shape the people inside them.
 stats:
-  - nAccent: "40"
-    n: +
+  - n: "46"
     lab: Publications
-  - n: "12"
-    lab: Journal articles
+  - n: "13"
+    lab: Topic areas
   - n: "01"
     lab: FT50 paper
   - n: "04"
@@ -21,21 +20,17 @@ secA:
   lead: "Each pillar is a long line of work. Each is animated by the same instinct: pay attention to the environment, not just the person standing inside it."
 pillars:
   - rn: i
-    title: Psychosocial safety
-    body: The environments — physical, social, structural — that make it possible for people at work to speak up, disagree, and tell the truth.
-    ct: 12 papers · ongoing
+    title: Creative Reflexivity
+    body: Reflexive and dialogical methods for organisational research — including the Imaginative Integrated Dialogical Approach (IIDA) and creative, fictionalised forms of academic writing.
   - rn: ii
-    title: Reflexivity
-    body: How individuals, teams and organisations notice and adjust their own behaviour — and the conditions that make reflexive practice possible.
-    ct: 08 papers · ongoing
+    title: Teaching & Learning
+    body: Student-Centred Experiential Learning (SCEL) — using students' own family and lived experience as the lens through which organisational behaviour is taught.
   - rn: iii
-    title: Leadership
-    body: Identity, formation and the very ordinary work of becoming the person others trust to make the call.
-    ct: 09 papers · ongoing
+    title: Leadership & Teams
+    body: Conceptual and applied work on leadership formation, engineering leadership, and leader–follower dynamics in an increasingly AI-mediated workplace.
   - rn: iv
-    title: Teaching
-    body: What classroom design, pedagogy and the practice of teaching itself do to the people we ask to learn.
-    ct: 07 papers · ongoing
+    title: People & Organisations
+    body: Psychosocial safety, motivation and dissatisfaction, and the environmental conditions that determine whether people can speak up at work.
 secB:
   rn: b
   heading: Featured publication
@@ -56,8 +51,8 @@ chapterIndex:
     - rn: i
       to: /research/publications
       title: Publications
-      desc: The full record — grouped by type. Journal articles, conference proceedings, book chapters. Citations in academic format, with DOIs.
-      count: 40+
+      desc: The full record — grouped by research theme. Citations in academic format, with DOIs where available.
+      count: "46"
       unit: papers
     - rn: ii
       to: /research/media

@@ -4,26 +4,26 @@ hero:
   roman: Chapter I · § iii
   heading: Where I am, and what's
   headingAccent: in the oven.
-  lede: A working timeline of past appointments, and the four projects I'm spending most of my time on right now.
+  lede: A working timeline of past appointments, and the four things I'm spending most of my time on right now.
 currentHead:
   rn: a
   title: Current — in flight
 projects:
-  - stat: Active research
-    title: Psychosocial Safety in Healthcare Teams
-    tags: Field study · 24 months · 4-site
-    body: A longitudinal field study across four South Australian hospital units, examining how local environment design shapes the willingness of clinicians to speak up.
-    with: With co-investigators TBC
-  - stat: Writing
-    title: Book project · Breaking Mental Models
-    tags: Draft manuscript · 2026 / 2027
-    body: A trade book that puts thirty years of OB research into the hands of anyone who has ever wondered why a workplace can't seem to change.
-    with: Publisher TBC
-  - stat: Teaching
-    title: Reimagining the OB classroom
-    tags: Curriculum · Postgrad
-    body: A complete rebuild of the postgraduate OB unit around the three-levels-of-analysis structure that now sits in the Education Hub.
-    with: With colleagues at institution TBC
+  - stat: Current role
+    title: Senior Manager – Education Services
+    tags: SACE Board of South Australia · Jan 2026 – present
+    body: Strategic leadership of the SACE Board's curriculum, assessment, recognition and quality-assurance frameworks — leading systemic education-change initiatives and a team of Faculty Managers.
+    with: SACE Board of South Australia
+  - stat: Supervision
+    title: Five PhD candidates, four research threads
+    tags: HDR supervision · ongoing
+    body: Principal or co-supervisor across psychosocial safety, modern slavery in supply chains, work-life enrichment, and psychological contracts in higher education.
+    with: University of Adelaide
+  - stat: Editorial
+    title: Editorial Review Board Member, JME
+    tags: Journal of Management Education · since Mar 2026
+    body: Plus ongoing reviewer roles at the Journal of East European Management Studies, the International Journal of Doctor Studies, and ABDC-ranked journals since 2017.
+    with: Academic publishing
   - stat: Public
     title: The podcast, Season 01
     tags: 8 episodes · monthly
@@ -32,29 +32,32 @@ projects:
 roadHead:
   rn: b
   title: The road behind
-banner: Timeline below is scaffold copy — client to confirm dates, titles, and institutions.
 timeline:
   - active: true
-    when: 2022 — present · Adelaide
-    title: Senior Lecturer, Organisational Behaviour
-    where: University placeholder
-    body: Research stream lead in psychosocial safety. Doctoral supervision. Postgraduate teaching. Industry consultancy through the university's centre for centre name TBC.
-  - when: 2019 — 2022 · Adelaide
-    title: Lecturer, Management
-    where: University placeholder
-    body: Moved to Adelaide. Built the undergraduate OB sequence still taught there today.
-  - when: 2014 — 2018 · United Kingdom
-    title: PhD candidate & teaching fellow
-    where: University placeholder
-    body: Doctorate completed under the supervision of supervisor TBC. First publications appeared in this window, including the 2020 Journal of Business Ethics paper.
-  - when: 2008 — 2014 · Singapore
-    title: Lecturer, Business & Management
-    where: University placeholder
-    body: First academic post. First teaching awards. The decade that taught me the craft.
-  - when: Earlier · India
-    title: Undergraduate years & the first questions
-    where: University placeholder
-    body: The question of why people do what they do at work first showed up here, and has not gone away since.
+    when: 2021 — present · Adelaide
+    title: Lecturer in Management, University of Adelaide
+    where: Program Director (2022–2025) · Course Coordinator (2019–2026)
+    body: A decade-long build from sessional tutor to lecturer — teaching People & Organisations, Managing Organisations & People, and Managing Across Cultures III throughout.
+  - when: 2019 — 2021 · Adelaide
+    title: Credit Sales Associate → Senior Credit Sales Associate
+    where: OurMoneyMarket Pty Ltd
+    body: Credit and collections operations, investor relations and structured credit deals — alongside sessional teaching.
+  - when: 2017 — 2019 · Adelaide
+    title: Design Consultant
+    where: Australian Outdoor Living Pty Ltd
+    body: Consultancy on fibreglass swimming pools for domestic clients, architectural drawings and site inspections.
+  - when: 2015 — 2017 · Adelaide
+    title: Promotions Representative
+    where: Bramalco Pty Ltd
+    body: The first Australian role — after a hostel, 350 job applications, and a chance offer of door-knocking work.
+  - when: 2005 — 2014 · UK, India & USA
+    title: Sales & business development roles
+    where: PC World (UK) · Elation Softnet, Integra Software, HTC Global (India) · Freyr Inc. (USA)
+    body: A decade in sales and business development across three countries, including the US posting that ended in an H1B dispute and a lawsuit — before the move to Australia.
+  - when: 2003 — 2005 · Dublin
+    title: Security work & undergraduate studies
+    where: Securway Security Ltd, Dublin
+    body: Night security shifts funded a Diploma and a Bachelor's in Management & Information Systems, with attendance kept above 97% to protect the visa that depended on it.
 cta:
   eyebrow: Looking for the formal record?
   display: The full CV lives one section over.

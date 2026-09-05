@@ -5,6 +5,7 @@ hero:
   heading: One theory
   headingAccent: at a time.
   lede: Twenty-eight short video lessons — six to ten minutes each — that take a single theory and put it next to a workplace situation you've actually been in.
+banner: Lesson durations, release dates and progress figures below are placeholders — scripts are drawn from the source material, but recordings are still in production.
 feature:
   label: Featured · 06:42
   time: "02:11 / 06:42"

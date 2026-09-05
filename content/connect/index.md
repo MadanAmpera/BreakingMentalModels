@@ -10,8 +10,8 @@ secA:
   heading: All in one place
 channels:
   - lab: ✉ Email
-    val: hello@breakingmentalmodels.com
-    body: Thoughtful, detailed messages answered with care — every enquiry within 24 hours.
+    val: breakingmentalmodels@gmail.com
+    body: Thoughtful, detailed messages answered with care — every enquiry within 24 hours. Not sure who to address it to? hello@breakingmentalmodels.com also reaches us.
   - lab: ☎ Phone
     val: +61 450 921 758
     body: Available Mon–Fri, 5pm–10pm Adelaide (ACST). Leave a voicemail outside hours and we'll call back.
