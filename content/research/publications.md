@@ -241,22 +241,13 @@ pubGroups:
         type: Case study
         title: "Case Study: Planning, Viterra Australia"
         auth: "Agarwal, A. · In J.R. Schermerhorn et al., Exploring Management, 1st Asia-Pacific Edition, John Wiley & Sons Australia, pp. 209–211"
-downloadBar:
-  label: Full reference list
-  links:
-    - label: Download BibTeX
-      to: "#"
-    - label: Download CV (PDF)
-      to: "#"
-    - label: Google Scholar ↗
-      to: "#"
 chapterNav:
   prev:
     to: /research
     title: II · Research
     label: ← Back to chapter
   next:
-    to: /research/media
-    title: ii · Media & citations
-    label: Next section →
+    to: /education-hub
+    title: III · Education Hub
+    label: Next chapter →
 ---

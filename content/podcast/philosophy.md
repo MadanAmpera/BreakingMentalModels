@@ -36,8 +36,8 @@ chapterNav:
     title: ii · Be a guest
     label: ← Previous section
   next:
-    to: /voices
-    title: VI · Voices
+    to: /connect
+    title: VI · Connect
     label: Next chapter →
 ---
 

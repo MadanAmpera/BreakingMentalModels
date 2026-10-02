@@ -83,7 +83,7 @@ chapterNav:
     title: IV · Work With Me
     label: ← Previous chapter
   next:
-    to: /voices
-    title: VI · Voices
+    to: /connect
+    title: VI · Connect
     label: Next chapter →
 ---

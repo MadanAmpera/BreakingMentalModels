@@ -6,12 +6,6 @@ const explore = [
   { label: 'Work With Me', to: '/work-with-me' },
   { label: 'Podcast', to: '/podcast' },
 ]
-const more = [
-  { label: 'Testimonials', to: '/voices' },
-  { label: 'Student feedback', to: '/voices#students' },
-  { label: 'Travel & whereabouts', to: '/connect#travel' },
-  { label: 'FAQ', to: '/connect/faq' },
-]
 const year = new Date().getFullYear()
 </script>
 
@@ -34,16 +28,10 @@ const year = new Date().getFullYear()
         </div>
 
         <div>
-          <h4>More</h4>
-          <NuxtLink v-for="l in more" :key="l.to" :to="l.to">{{ l.label }}</NuxtLink>
-        </div>
-
-        <div>
           <h4>Connect</h4>
           <NuxtLink to="/connect">Contact</NuxtLink>
-          <NuxtLink to="/work-with-me/book">Book appointment</NuxtLink>
-          <a href="#">YouTube</a>
-          <a href="#">LinkedIn</a>
+          <a href="mailto:breakingmentalmodels@gmail.com">Email</a>
+          <a href="tel:+61450921758">Phone</a>
         </div>
       </div>
 

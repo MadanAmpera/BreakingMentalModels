@@ -1,7 +1,7 @@
 ---
 title: Connect
 hero:
-  roman: Chapter VII · Get in touch
+  roman: Chapter VI · Get in touch
   heading: Reach out. Your
   headingAccent: way.
   lede: No two people communicate the same way — and we wouldn't have it any other way. Email, a real phone call, a quick chat, or a letter to a café in Adelaide. Choose the channel that feels most natural, and we'll meet you there.
@@ -65,74 +65,32 @@ secD:
 hub:
   title: ▶ YouTube — the main hub
   body: Every video and podcast episode lives here first. Everything else links back to it. Subscribe and watch all content in one place.
-  ctaLabel: Subscribe
-  ctaTo: "#"
 socials:
   - p: Spotify
     d: Podcast audio
-    to: "#"
   - p: Apple Podcasts
     d: Listen on the go
-    to: "#"
   - p: Instagram
     d: Clips & reels
-    to: "#"
   - p: LinkedIn
     d: Professional insight
-    to: "#"
   - p: TikTok
     d: Short-form clips
-    to: "#"
   - p: X / Twitter
     d: Updates & links
-    to: "#"
   - p: WeChat
     d: "公众号: BreakingMentalModels"
-    to: "#"
   - p: + more
     d: Discord · Threads · Reddit
-    to: "#"
-secE:
-  rn: e
-  heading: Travel & whereabouts
-  id: travel
-  lead: Based in Adelaide, but often on the move for keynotes, seminars and recording. If our paths are about to cross, let's make the most of it.
-travelBanner: Schedule below is scaffold — client to confirm dates & cities.
-travelPin: Adelaide, SA · home base
-travel:
-  - city: Adelaide, Australia
-    note: Home base · available year-round
-    date: Ongoing
-  - city: Singapore
-    note: Guest seminar & recording
-    date: Aug 2026
-  - city: London, UK
-    note: Keynote & meetings
-    date: Oct 2026
-  - city: Online
-    note: Virtual sessions, any time zone
-    date: Anytime
-chapterIndex:
-  label: Also in this chapter
-  count: "01"
-  rows:
-    - rn: i
-      to: /connect/faq
-      title: Frequently asked questions
-      desc: Response times, working internationally, whether we'll do your assignment for you (we won't), engagement costs, and how to be a podcast guest.
-      count: →
-      unit: answers
 cta:
   eyebrow: Your voice matters
   display: Reaching out should feel as inspired as the idea you carry.
   primaryLabel: Send a message
   primaryTo: /connect#message
-  ghostLabel: Read the FAQ
-  ghostTo: /connect/faq
 chapterNav:
   prev:
-    to: /voices
-    title: VI · Voices
+    to: /podcast
+    title: V · The Podcast
     label: ← Previous chapter
   next:
     to: /

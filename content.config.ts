@@ -30,16 +30,6 @@ const secHead = z.object({
   id: z.string().optional(),
 }).optional()
 
-// Testimonial card (Voices). `name` renders plain; `nameNote` renders in the
-// muted "client-note" style used for TBC scaffold placeholders.
-const testimonialCard = z.object({
-  quote: z.string(),
-  name: z.string().optional(),
-  nameNote: z.string().optional(),
-  role: z.string().optional(),
-  avatar: z.string().optional(),
-})
-
 const chapterNav = z.object({
   prev: z.object({ to: z.string(), title: z.string(), label: z.string().optional() }).optional(),
   next: z.object({ to: z.string(), title: z.string(), label: z.string().optional() }).optional(),
@@ -300,17 +290,6 @@ export default defineContentConfig({
           ctaLabel: z.string().optional(),
           ctaTo: z.string().optional(),
         }).optional(),
-
-        // Book: "what to expect" strip (the scheduler itself is a static mock-up)
-        expect: z.array(z.object({
-          n: z.string(),
-          title: z.string(),
-          body: z.string(),
-        })).optional(),
-        booker: z.object({
-          rn: z.string().optional(),
-          heading: z.string().optional(),
-        }).optional(),
       }),
     }),
 
@@ -393,46 +372,7 @@ export default defineContentConfig({
       }),
     }),
 
-    // ── Voices (Chapter VI): single page — testimonials + student feedback ─
-    voices: defineCollection({
-      type: 'page',
-      source: 'voices/**/*.md',
-      schema: z.object({
-        title: z.string(),
-        hero,
-        cta,
-        chapterNav,
-        banner: z.string().optional(),
-        stats: z.array(z.object({
-          n: z.string(),
-          nAccent: z.string().optional(),
-          lab: z.string(),
-        })).optional(),
-        // Featured testimonial (optional accent phrase via pre/em/post)
-        feat: z.object({
-          quotePre: z.string().optional(),
-          quoteEm: z.string().optional(),
-          quotePost: z.string().optional(),
-          byLabel: z.string().optional(),
-          byNote: z.string().optional(),
-        }).optional(),
-        secA: secHead,
-        secB: secHead,
-        orgTestimonials: z.array(testimonialCard).optional(),
-        // Student video cards (thumbnails are placeholders → YouTube/Vimeo later)
-        videos: z.array(z.object({
-          quote: z.string(),
-          name: z.string().optional(),
-          nameNote: z.string().optional(),
-          suffix: z.string().optional(),
-          image: z.string().optional(),
-          label: z.string().optional(),
-        })).optional(),
-        studentTestimonials: z.array(testimonialCard).optional(),
-      }),
-    }),
-
-    // ── Connect (Chapter VII): contact landing + FAQ ───────────────────────
+    // ── Connect (Chapter VI): contact landing ──────────────────────────────
     connect: defineCollection({
       type: 'page',
       source: 'connect/**/*.md',
@@ -447,9 +387,8 @@ export default defineContentConfig({
         secB: secHead,
         secC: secHead,
         secD: secHead,
-        secE: secHead,
 
-        // Landing: contact channels, audience split, socials hub, travel schedule
+        // Landing: contact channels, audience split, socials hub
         channels: z.array(z.object({
           lab: z.string(),
           val: z.string(),
@@ -474,30 +413,11 @@ export default defineContentConfig({
           d: z.string().optional(),
           to: z.string().optional(),
         })).optional(),
-        travelBanner: z.string().optional(),
-        travelPin: z.string().optional(),
-        travel: z.array(z.object({
-          city: z.string(),
-          note: z.string().optional(),
-          date: z.string().optional(),
-        })).optional(),
-
-        // FAQ: grouped accordions (answer is plain prose + an optional trailing link)
-        faqGroups: z.array(z.object({
-          title: z.string(),
-          items: z.array(z.object({
-            q: z.string(),
-            a: z.string(),
-            linkLabel: z.string().optional(),
-            linkTo: z.string().optional(),
-            open: z.boolean().optional(),
-          })),
-        })).optional(),
       }),
     }),
 
-    // ── Research (Chapter II): landing + publications, media, interviews,
-    //    invitations. Citation/author lines are plain editable strings. ─────
+    // ── Research (Chapter II): landing + publications. Citation/author lines
+    //    are plain editable strings. ─────────────────────────────────────────
     research: defineCollection({
       type: 'page',
       source: 'research/**/*.md',
@@ -552,63 +472,6 @@ export default defineContentConfig({
         downloadBar: z.object({
           label: z.string().optional(),
           links: z.array(z.object({ label: z.string(), to: z.string().optional() })),
-        }).optional(),
-
-        // Media: metric block + press features + citing works
-        metrics: z.array(z.object({
-          n: z.string(),
-          nAccent: z.string().optional(),
-          lab: z.string(),
-          src: z.string().optional(),
-        })).optional(),
-        press: z.array(z.object({
-          outlet: z.string(),
-          date: z.string().optional(),
-          title: z.string(),
-          kind: z.string().optional(),
-          to: z.string().optional(),
-        })).optional(),
-        citing: z.array(z.object({
-          cap: z.string().optional(),
-          title: z.string(),
-          auth: z.string().optional(),
-        })).optional(),
-        citingNote: z.object({
-          text: z.string(),
-          linkLabel: z.string().optional(),
-          linkTo: z.string().optional(),
-        }).optional(),
-
-        // Interviews: appearance list
-        ivHead: z.object({ label: z.string(), count: z.string().optional() }).optional(),
-        interviews: z.array(z.object({
-          imageLabel: z.string().optional(),
-          image: z.string().optional(),
-          show: z.string().optional(),
-          title: z.string(),
-          with: z.string().optional(),
-          topics: z.array(z.string()).optional(),
-          when: z.string().optional(),
-          dur: z.string().optional(),
-          to: z.string().optional(),
-        })).optional(),
-
-        // Invitations: grouped engagements + available talks
-        invGroups: z.array(z.object({
-          title: z.string(),
-          ct: z.string().optional(),
-          items: z.array(z.object({
-            kind: z.string().optional(),
-            date: z.string().optional(),
-            title: z.string(),
-            venue: z.string().optional(),
-            where: z.string().optional(),
-            future: z.boolean().optional(),
-          })),
-        })).optional(),
-        topicsCard: z.object({
-          title: z.string().optional(),
-          talks: z.array(z.object({ t: z.string(), desc: z.string().optional() })),
         }).optional(),
       }),
     }),
@@ -705,9 +568,11 @@ export default defineContentConfig({
         }).optional(),
         railCount: z.string().optional(),
         lessons: z.array(z.object({
-          cat: z.enum(['i', 'g', 'o']),
+          // Omitted for topics outside the three levels (e.g. foundational models).
+          cat: z.enum(['i', 'g', 'o']).optional(),
           theory: z.string().optional(),
           title: z.string(),
+          body: z.string().optional(),
           lesson: z.string().optional(),
           when: z.string().optional(),
           dur: z.string().optional(),

@@ -61,7 +61,7 @@ const catLabel: Record<string, string> = {
               </div>
             </div>
             <div class="col-body">
-              <a v-for="(t, ti) in level.theories" :key="ti" class="theory" href="#">
+              <div v-for="(t, ti) in level.theories" :key="ti" class="theory">
                 <span class="num">{{ t.num }}</span>
                 <h3>{{ t.title }}</h3>
                 <p v-if="t.sub" class="sub">{{ t.sub }}</p>
@@ -69,7 +69,7 @@ const catLabel: Record<string, string> = {
                 <div v-if="t.tags?.length" class="tags">
                   <span v-for="(tag, gi) in t.tags" :key="gi">{{ tag }}</span>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>

@@ -90,6 +90,7 @@ useSeoMeta({
             {{ page.ctaPrimaryLabel }} <span class="arrow">→</span>
           </NuxtLink>
           <NuxtLink
+            v-if="page.ctaGhostLabel"
             class="btn btn-ghost"
             :to="page.ctaGhostTo"
             style="color: var(--ink-on-dark); border-color: var(--line-dark); border-radius: 0;"
@@ -212,9 +213,6 @@ useSeoMeta({
   min-height: 200px;
   transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
-.toc-grid > :nth-child(n + 4) {
-  grid-column: span 3;
-}
 .toc-tile:hover {
   background: var(--accent-tint);
   border-color: var(--accent);
@@ -264,9 +262,6 @@ useSeoMeta({
   margin: 18px 0 10px;
   transition: color 0.18s;
 }
-.toc-grid > :nth-child(n + 4) .tt-h3 {
-  font-size: clamp(22px, 1.9vw, 26px);
-}
 .tt-desc {
   font-size: 13.5px;
   line-height: 1.45;
@@ -276,9 +271,6 @@ useSeoMeta({
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-.toc-grid > :nth-child(n + 4) .tt-desc {
-  -webkit-line-clamp: 2;
 }
 
 .tt-foot {
@@ -308,13 +300,9 @@ useSeoMeta({
     grid-column: span 6;
     min-height: 180px;
   }
-  .toc-grid > :nth-child(n + 4) {
-    grid-column: span 6;
-  }
 }
 @media (max-width: 620px) {
-  .toc-tile,
-  .toc-grid > :nth-child(n + 4) {
+  .toc-tile {
     grid-column: span 12;
     min-height: 0;
   }

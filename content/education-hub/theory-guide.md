@@ -4,7 +4,7 @@ hero:
   roman: Chapter III · § ii
   heading: The theory guide —
   headingAccent: A to Z.
-  lede: When you already know what you're looking for. Every theory indexed alphabetically, with one-line summaries, the canonical reference, and a marker for which level of analysis it lives at.
+  lede: Every theory across the three levels of analysis — Individual, Group, and Organisational — indexed alphabetically, with its author and its core idea.
 legend:
   - cat: i
     label: Level I · Individual
@@ -12,181 +12,265 @@ legend:
     label: Level II · Group
   - cat: o
     label: Level III · Organisational
-legendCount: 42 entries
+legendCount: 49 entries
 letterSections:
   - letter: A
-    ct: 02 entries
+    ct: 04 entries
     entries:
-      - name: Affective events theory
-        who: Weiss & Cropanzano, 1996
-        summ: Small workplace events produce small emotions; small emotions accumulate into the year you're having.
+      - name: Adams' Equity Theory
+        who: J. Stacy Adams
+        summ: People compare their input-to-outcome ratio with others' and act to restore fairness.
         level: i
-      - name: Attribution theory
-        who: Heider · Kelley · Weiner
-        summ: When their behaviour is the issue it's their character; when ours is, it was the situation. The "fundamental" mistake.
+      - name: ADKAR Model
+        who: Prosci
+        summ: Awareness, Desire, Knowledge, Ability, Reinforcement — organisational change only happens when individuals change.
+        level: o
+      - name: Alderfer's ERG Theory
+        who: Clayton Alderfer
+        summ: Existence, Relatedness, and Growth — needs that can operate simultaneously, with frustration causing regression.
+        level: i
+      - name: Attribution Theory
+        who: Fritz Heider
+        summ: Internal vs. external causes of behaviour — and the fundamental attribution error.
         level: i
   - letter: B
-    ct: 02 entries
-    entries:
-      - name: Big Five personality
-        who: Costa & McCrae, 1992
-        summ: Five trait dimensions that explain a surprisingly large amount, and a surprisingly small amount, of who shows up at work.
-        level: i
-      - name: Burns & Stalker — mechanistic / organic
-        who: Burns & Stalker, 1961
-        summ: Two structural shapes, and the conditions under which each one quietly breaks the other.
-        level: o
-  - letter: C
     ct: 03 entries
     entries:
-      - name: Cognitive dissonance
-        who: Festinger, 1957
-        summ: We do not act on what we believe. We come to believe what we have just done.
-        level: i
-      - name: Competing values framework
-        who: Quinn & Rohrbaugh, 1983
-        summ: Clan, adhocracy, market, hierarchy. Most workplaces try to be all four and end up being none.
-        level: o
-      - name: Conflict modes
-        who: Thomas & Kilmann, 1974
-        summ: Compete, accommodate, avoid, compromise, collaborate. None is always right; all are usually misused.
+      - name: Behavioural Theories
+        who: Ohio State · Michigan · Blake & Mouton
+        summ: Initiating structure vs. consideration — and the Managerial Grid of concern for people against concern for production.
         level: g
-  - letter: E
-    ct: 02 entries
-    entries:
-      - name: Equity theory
-        who: Adams, 1963
-        summ: People do not compare themselves to ideals. They compare themselves to the person two desks over.
+      - name: Belbin's Team Roles
+        who: Meredith Belbin
+        summ: Nine team roles across action-, people-, and thought-oriented clusters.
+        level: g
+      - name: Big Five Model (OCEAN)
+        who: Openness · Conscientiousness · Extraversion · Agreeableness · Neuroticism
+        summ: Five stable trait dimensions predicting work behaviour.
         level: i
-      - name: Expectancy theory
-        who: Vroom, 1964
-        summ: Effort is a multiplication, not an addition — and any term going to zero collapses the whole.
+  - letter: C
+    ct: 05 entries
+    entries:
+      - name: Classical Conditioning
+        who: Ivan Pavlov
+        summ: A neutral stimulus, repeatedly paired with an event, comes to trigger the same response.
+        level: i
+      - name: Cognitive Dissonance Theory
+        who: Leon Festinger
+        summ: The discomfort of attitudes and behaviours in conflict — and how people resolve it.
+        level: i
+      - name: Communication Theories
+        who: Shannon-Weaver model
+        summ: Sender, channel, receiver — and the noise that can distort meaning at every stage.
+        level: g
+      - name: Contemporary Leadership Theories
+        who: Transformational · Transactional · LMX · Servant
+        summ: Leadership as vision, exchange, relationship quality, and service to followers.
+        level: g
+      - name: Contingency Theories
+        who: Fiedler · House (Path-Goal) · Hersey-Blanchard
+        summ: Leadership effectiveness depends on matching style to the situation and the follower.
+        level: g
+  - letter: D
+    ct: 01 entry
+    entries:
+      - name: Deontological Ethics
+        who: Immanuel Kant
+        summ: Actions are intrinsically right or wrong — treat people as ends, not means.
+        level: i
+  - letter: E
+    ct: 01 entry
+    entries:
+      - name: Ethical Climate Theory
+        who: Victor & Cullen
+        summ: Shared organisational perceptions of ethical norms shape individual moral behaviour.
         level: i
   - letter: F
     ct: 01 entry
     entries:
-      - name: French & Raven's bases of power
-        who: French & Raven, 1959
-        summ: Five sources of power — coercive, reward, legitimate, referent, expert. Most workplaces over-use the first three.
+      - name: French & Raven's Five Bases of Power
+        who: John French & Bertram Raven
+        summ: Legitimate, Reward, Coercive, Expert, Referent.
         level: g
   - letter: G
-    ct: 02 entries
-    entries:
-      - name: Goal-setting theory
-        who: Locke & Latham, 1990
-        summ: Specific, difficult goals beat "do your best" — almost always, and especially when the work is dull.
-        level: i
-      - name: Groupthink
-        who: Janis, 1972
-        summ: Cohesion is good for output and bad for judgement. The team that agrees too quickly should be the one you worry about.
-        level: g
-  - letter: H
     ct: 01 entry
     entries:
-      - name: Hackman & Oldham — job characteristics model
-        who: Hackman & Oldham, 1976
-        summ: A job's design — skill variety, task identity, autonomy, feedback — does more for motivation than any motivational speech.
+      - name: General Systems Theory
+        who: Ludwig von Bertalanffy
+        summ: Holism, interdependence, equifinality, and synergy — the whole is greater than the sum of its parts.
+        level: o
+  - letter: H
+    ct: 03 entries
+    entries:
+      - name: Herzberg's Two-Factor Theory
+        who: Frederick Herzberg
+        summ: Hygiene factors prevent dissatisfaction; motivators create satisfaction.
+        level: i
+      - name: Hofstede's Cultural Dimensions
+        who: Geert Hofstede
+        summ: Six cross-national cultural dimensions affecting management practice.
+        level: o
+      - name: Holland's Typology of Personality–Job Fit
+        who: John Holland
+        summ: Six personality types (RIASEC) — person–environment congruence predicts satisfaction and lower turnover.
         level: i
   - letter: J
     ct: 01 entry
     entries:
-      - name: Job crafting
-        who: Wrzesniewski & Dutton, 2001
-        summ: The job description is a starting position, not a destination — most people quietly re-craft what they do.
-        level: i
+      - name: Job Demands–Resources (JD-R) Model
+        who: Arnold Bakker & Evangelia Demerouti
+        summ: Demands impair health; resources fuel engagement and buffer demands.
+        level: o
   - letter: K
-    ct: 01 entry
+    ct: 04 entries
     entries:
-      - name: Kotter's 8-step change model
-        who: Kotter, 1996
-        summ: The famous staircase — best used not as a recipe, but as a checklist of things you forgot.
+      - name: Karasek's Demand–Control Model
+        who: Robert Karasek
+        summ: Job stress comes from high demands combined with low control — autonomy is a protective factor.
+        level: o
+      - name: Kelley's Covariation Model
+        who: Harold Kelley
+        summ: Consensus, distinctiveness, and consistency decide whether we attribute behaviour internally or externally.
+        level: i
+      - name: Kohlberg's Stages of Moral Development
+        who: Lawrence Kohlberg
+        summ: Three levels of moral reasoning — Pre-conventional → Conventional → Post-conventional.
+        level: i
+      - name: Kotter's 8-Step Process
+        who: John Kotter
+        summ: Eight-stage roadmap for leading large-scale organisational transformation.
         level: o
   - letter: L
-    ct: 03 entries
-    entries:
-      - name: Leader–member exchange (LMX)
-        who: Graen, 1976
-        summ: There is no "the team". There are as many teams as there are dyads. Lead the relationships, not the org chart.
-        level: g
-      - name: Lewin's change model
-        who: Lewin, 1947
-        summ: Unfreeze, change, refreeze. Still the cleanest map of why change initiatives don't stick.
-        level: o
-      - name: Locke & Latham — see Goal-setting
-        who: cross-reference
-        summ: See entry under G · Goal-setting theory.
-        level: i
-  - letter: M
-    ct: 01 entry
-    entries:
-      - name: Mintzberg's configurations
-        who: Mintzberg, 1979
-        summ: Five basic shapes the organisation can take. Most dysfunction is a shape mismatch.
-        level: o
-  - letter: O
-    ct: 01 entry
-    entries:
-      - name: Organisational learning
-        who: Argyris & Schön, 1978
-        summ: Single-loop vs double-loop learning — and why most "lessons learned" sessions only do the first.
-        level: o
-  - letter: P
     ct: 02 entries
     entries:
-      - name: Practice theory
-        who: Schatzki · Nicolini
-        summ: Organisations are not what they say they are. They are what they repeatedly, embodiedly, do.
+      - name: Lewin's Three-Step Model
+        who: Lewin
+        summ: Unfreeze – Change – Refreeze — managing transitions systematically.
         level: o
-      - name: Psychological safety
-        who: Edmondson, 1999
-        summ: The single condition without which most other team interventions are theatre.
+      - name: Locke's Goal-Setting Theory
+        who: Edwin Locke
+        summ: Specific, challenging goals lead to higher performance than vague or easy ones.
+        level: i
+  - letter: M
+    ct: 05 entries
+    entries:
+      - name: Maslow's Hierarchy of Needs
+        who: Abraham Maslow
+        summ: Five-level pyramid of needs — lower needs must be met first.
+        level: i
+      - name: McClelland's Achievement Motivation
+        who: David McClelland
+        summ: Three dominant needs — achievement, affiliation, and power.
+        level: i
+      - name: Mintzberg's Organisational Configurations
+        who: Henry Mintzberg
+        summ: Five structural configurations, each suited to specific environments and strategies.
+        level: o
+      - name: Moral Disengagement
+        who: Albert Bandura · Tenbrunsel & Messick
+        summ: Why good people do bad things — and how the ethical dimension of a decision fades from view.
+        level: i
+      - name: Myers-Briggs Type Indicator (MBTI)
+        who: Based on Carl Jung's typology
+        summ: Four dichotomies producing 16 types — best used as a self-reflection tool rather than a predictor.
+        level: i
+  - letter: O
+    ct: 02 entries
+    entries:
+      - name: Open Systems Theory
+        who: Daniel Katz & Robert Kahn
+        summ: Organisations take in inputs, transform them, and adapt through feedback from their environment.
+        level: o
+      - name: Operant Conditioning
+        who: B.F. Skinner
+        summ: Voluntary behaviours are shaped by their consequences.
+        level: i
+  - letter: P
+    ct: 01 entry
+    entries:
+      - name: Principled Negotiation
+        who: Fisher & Ury
+        summ: Separate people from the problem, focus on interests not positions — and know your BATNA.
         level: g
   - letter: R
     ct: 02 entries
     entries:
-      - name: Resource dependence theory
-        who: Pfeffer & Salancik, 1978
-        summ: Organisations are shaped, daily, by the things they need but do not control.
-        level: o
-      - name: Reinforcement theory
-        who: Skinner, 1953
-        summ: Behaviour is shaped by what follows it. The hardest part is noticing what is actually following what.
+      - name: Rest's Four-Component Model
+        who: James Rest
+        summ: Moral Sensitivity → Judgement → Motivation → Character — four steps to ethical action.
+        level: i
+      - name: Rokeach Value Survey
+        who: Milton Rokeach
+        summ: Terminal values (desirable end-states) vs. instrumental values (desirable modes of behaviour).
         level: i
   - letter: S
+    ct: 06 entries
+    entries:
+      - name: Schein's Three Levels of Culture
+        who: Edgar Schein
+        summ: Artifacts → Espoused Values → Basic Assumptions — deep culture is invisible.
+        level: o
+      - name: Skinner's Reinforcement Theory
+        who: B.F. Skinner
+        summ: Behaviour is a function of its consequences.
+        level: i
+      - name: Social Identity Theory
+        who: Tajfel & Turner
+        summ: People derive part of their self-concept from the groups they belong to.
+        level: g
+      - name: Social Learning Theory
+        who: Albert Bandura
+        summ: People learn by observing and modelling others.
+        level: i
+      - name: Social Perception Theory
+        who: Stereotyping · Halo effect · Selective perception · Projection
+        summ: How we form impressions of other people — and the biases that distort them.
+        level: i
+      - name: Stakeholder Theory
+        who: R. Edward Freeman
+        summ: Organisations owe ethical obligations to all affected parties, not just shareholders.
+        level: i
+  - letter: T
     ct: 04 entries
     entries:
-      - name: Schein's culture model
-        who: Schein, 1985
-        summ: Artifacts, espoused values, basic assumptions — and the depressing distance between each layer.
+      - name: Taylor's Scientific Management
+        who: Frederick Winslow Taylor
+        summ: Scientifically study each task to find the one best method.
         level: o
-      - name: Self-determination theory
-        who: Deci & Ryan, 1985
-        summ: Why autonomy, competence and relatedness are not motivators — they are the conditions in which motivation appears.
-        level: i
-      - name: Self-efficacy
-        who: Bandura, 1977
-        summ: The single best predictor of whether someone will try the hard thing is whether they believe they can.
-        level: i
-      - name: Social identity theory
-        who: Tajfel & Turner, 1979
-        summ: The group is not just where you work; under the right conditions, it is who you become at work.
+      - name: Thomas-Kilmann Conflict Mode Instrument
+        who: Kenneth Thomas & Ralph Kilmann
+        summ: Five conflict styles mapped on assertiveness and cooperativeness.
         level: g
-  - letter: T
-    ct: 03 entries
+      - name: Trait Theories
+        who: The "Great Man" theory and later trait research
+        summ: Leaders as born, not made — though traits alone don't account for situational variation.
+        level: g
+      - name: Tuckman's Stages
+        who: Tuckman
+        summ: Forming – Storming – Norming – Performing – Adjourning.
+        level: g
+  - letter: U
+    ct: 01 entry
     entries:
-      - name: Transformational leadership
-        who: Bass, 1985
-        summ: The four "I"s — idealised influence, inspirational motivation, intellectual stimulation, individualised consideration.
-        level: g
-      - name: Trist & Bamforth — sociotechnical systems
-        who: Trist & Bamforth, 1951
-        summ: Technology and social structure must be designed together, or one will silently eat the other.
+      - name: Utilitarianism
+        who: Bentham & Mill
+        summ: The greatest good for the greatest number — outcomes-based moral reasoning.
+        level: i
+  - letter: V
+    ct: 01 entry
+    entries:
+      - name: Vroom's Expectancy Theory
+        who: Victor Vroom
+        summ: Motivation = Expectancy × Instrumentality × Valence.
+        level: i
+  - letter: W
+    ct: 01 entry
+    entries:
+      - name: Weber's Bureaucracy Theory
+        who: Max Weber
+        summ: Rational, rule-governed hierarchy as the most technically efficient organisational form.
         level: o
-      - name: Tuckman's stages
-        who: Tuckman, 1965
-        summ: "Forming, storming, norming, performing — and the underrated fifth: adjourning, often skipped at great cost."
-        level: g
-footNote: A further 14 cross-references and minor entries are omitted from this typographic scaffold — they will appear in the live build.
+footNote: "Study tip: the most powerful exam answers don't just define a theory — they show it in action. Practise explaining each theory using a personal example first (family, friends, school), then translate it to an organisational context."
 chapterNav:
   prev:
     to: /education-hub

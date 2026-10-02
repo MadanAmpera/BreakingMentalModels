@@ -4,7 +4,7 @@ hero:
   roman: Chapter I · § iv
   heading: Quietly,
   headingAccent: honoured.
-  lede: Forty-four awards and honours — fifteen for teaching alone — spanning five countries, and listed by category exactly as they were awarded.
+  lede: Forty-four awards and honours — fifteen for teaching alone — listed across five categories.
 stats:
   - n: "44"
     lab: Awards & honours
@@ -13,7 +13,7 @@ stats:
   - n: "09"
     lab: Research honours
   - n: "05"
-    lab: Countries
+    lab: Categories
 awardGroups:
   - title: Teaching & educational contributions
     meta: 15 honours · 2017 — 2025
@@ -206,10 +206,6 @@ awardGroups:
         title: Best Management Text Award — Outstanding Tertiary Resource
         where: Four contributed case studies
         badge: Textbook
-footNote:
-  text: A full, citation-ready list of awards and honours appears in the downloadable CV.
-  linkLabel: Download CV →
-  linkTo: /about/cv
 chapterNav:
   prev:
     to: /about/experience

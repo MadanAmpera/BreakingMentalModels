@@ -4,18 +4,7 @@ hero:
   roman: Chapter I · § ii
   heading: Profile &
   headingAccent: CV.
-  lede: A short video introduction, the formal record of education and appointments, and the full academic instrument — in one place.
-intro:
-  videoLabel: Video introduction — 2:14
-  eyebrow: Watch the introduction
-  heading: Two minutes on what I do, and why.
-  paragraphs:
-    - A short, unedited video — recorded at my desk in Adelaide — on what the practice of organisational behaviour actually looks like when it is taken seriously.
-    - If you've fifteen minutes after this, the biography essay covers the longer story.
-  meta:
-    - 02:14 min
-    - Recorded May 2026
-    - Captions available
+  lede: The formal record — education, academic appointments, doctoral supervision, and editorial service — in one place.
 cvSections:
   - title: Education
     items:
@@ -90,19 +79,6 @@ cvSections:
       - yr: UG & PG
         title: Organisational Behaviour · Managing Across Cultures · People & Organisations
         where: Full award list under Awards & honours
-  - title: Languages
-    items:
-      - yr: Fluent
-        title: English · Hindi
-downloadBar:
-  label: Full record
-  links:
-    - label: Download CV (PDF)
-      to: "#"
-    - label: ORCID profile ↗
-      to: "#"
-    - label: Google Scholar ↗
-      to: "#"
 chapterNav:
   prev:
     to: /about/biography

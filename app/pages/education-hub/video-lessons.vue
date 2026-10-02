@@ -29,8 +29,6 @@ const levelName: Record<string, string> = { i: 'Individual', g: 'Group', o: 'Org
 
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
-        <p v-if="page.banner" class="client-banner">{{ page.banner }}</p>
-
         <!-- Featured player -->
         <div v-if="page.feature" class="feature">
           <div class="player">
@@ -59,31 +57,19 @@ const levelName: Record<string, string> = { i: 'Individual', g: 'Group', o: 'Org
           </div>
         </div>
 
-        <!-- Filter rail (static mock) -->
-        <div class="rail">
-          <span class="lab">Filter</span>
-          <a class="on" href="#">All levels</a>
-          <a href="#">● Individual</a>
-          <a href="#">● Group</a>
-          <a href="#">● Organisational</a>
-          <span class="lab" style="margin-left: 14px;">Length</span>
-          <a href="#">Under 7 min</a>
-          <a href="#">7 — 10 min</a>
-          <span v-if="page.railCount" class="ct">{{ page.railCount }}</span>
-        </div>
-
         <!-- Lesson grid -->
         <div class="lessons">
           <div v-for="(l, i) in page.lessons" :key="i" class="lesson">
             <div class="ph" :data-label="l.label">
               <img v-if="l.image" :src="l.image" alt="">
-              <span class="badge" :class="l.cat">{{ levelName[l.cat] }}</span>
+              <span v-if="l.cat" class="badge" :class="l.cat">{{ levelName[l.cat] }}</span>
               <span v-if="l.dur" class="dur">{{ l.dur }}</span>
             </div>
             <div class="body">
               <span v-if="l.theory" class="theory">{{ l.theory }}</span>
               <h4>{{ l.title }}</h4>
-              <span class="meta">
+              <p v-if="l.body" class="desc">{{ l.body }}</p>
+              <span v-if="l.lesson || l.when" class="meta">
                 <span v-if="l.lesson">{{ l.lesson }}</span>
                 <span v-if="l.when">{{ l.when }}</span>
               </span>
@@ -227,46 +213,12 @@ const levelName: Record<string, string> = { i: 'Individual', g: 'Group', o: 'Org
 }
 .feature-actions { display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap; }
 
-/* Filter rail */
-.rail {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 48px;
-  padding: 14px 22px;
-  border: 1px solid var(--line);
-  background: var(--paper-2);
-  align-items: center;
-}
-.rail .lab {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-right: 8px;
-}
-.rail a {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  color: var(--ink-2);
-  border: 1px solid var(--line-2);
-  padding: 6px 14px;
-  border-radius: 99px;
-  transition: 0.15s;
-}
-.rail a.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.rail a:hover { border-color: var(--ink); color: var(--ink); }
-.rail .ct { margin-left: auto; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--ink-3); }
-
 /* Lesson grid */
 .lessons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 .lesson {
   background: var(--paper-2);
@@ -320,6 +272,7 @@ const levelName: Record<string, string> = { i: 'Individual', g: 'Group', o: 'Org
   letter-spacing: -0.005em;
   margin: 0;
 }
+.lesson .body .desc { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); margin: 0; }
 .lesson .body .meta {
   margin-top: auto;
   padding-top: 14px;

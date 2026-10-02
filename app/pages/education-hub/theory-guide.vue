@@ -50,14 +50,14 @@ const hasLetter = computed(() => new Set(page.value?.letterSections?.map(s => s.
             <span class="L">{{ section.letter }}</span>
             <span v-if="section.ct" class="ct">{{ section.ct }}</span>
           </div>
-          <a v-for="(e, ei) in section.entries" :key="ei" class="entry" href="#">
+          <div v-for="(e, ei) in section.entries" :key="ei" class="entry">
             <div>
               <div class="name">{{ e.name }}</div>
               <div v-if="e.who" class="who">{{ e.who }}</div>
             </div>
             <div v-if="e.summ" class="summ">{{ e.summ }}</div>
             <span class="level" :class="e.level">{{ levelName[e.level] }}</span>
-          </a>
+          </div>
         </div>
 
         <p v-if="page.footNote" class="foot-note">{{ page.footNote }}</p>
