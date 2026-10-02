@@ -21,7 +21,7 @@ useSeoMeta({
         <h1>{{ page.essay?.heading }} <em v-if="page.essay?.headingEm">{{ page.essay.headingEm }}</em></h1>
         <p class="dek">{{ page.essay?.dek }}</p>
         <p class="byline">
-          {{ page.essay?.author }}<span class="dot">·</span>{{ page.essay?.readTime }}<span class="dot">·</span>{{ page.essay?.updated }}
+          {{ page.essay?.author }}<template v-if="page.essay?.readTime"><span class="dot">·</span>{{ page.essay.readTime }}</template><template v-if="page.essay?.updated"><span class="dot">·</span>{{ page.essay.updated }}</template>
         </p>
         <div class="bot-rule" style="margin-top: 36px;" />
       </div>

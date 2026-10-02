@@ -26,19 +26,6 @@ secB:
   rn: b
   heading: Our approach in action
   lead: Every engagement follows a clear, evidence-informed journey — shaped around your context, not a one-size-fits-all programme. We work alongside your teams, not above them, building capability that endures long after the formal engagement ends.
-approach:
-  - s: "01"
-    title: Discover
-    body: A complimentary conversation to understand context, culture and the challenge worth pulling at.
-  - s: "02"
-    title: Diagnose
-    body: Peeling the onion — five layers of "why" to locate the closest problem arena, not the symptom.
-  - s: "03"
-    title: Shift the conditions
-    body: Building the social environment where new behaviours become natural, necessary and safe.
-  - s: "04"
-    title: Sustain
-    body: Holding the change long enough — with touchpoints and assessment — that it becomes the new normal.
 secC:
   rn: c
   heading: Who we work with
@@ -63,14 +50,14 @@ principle:
   displayPost: person.
   lead: Motivation never disappears — it redirects. When someone disengages or leaves, their motivation is fully intact; it is simply pointed elsewhere. Stop trying to inject energy. Start asking what is draining it. You cannot fix what is inside someone — but you can change what surrounds them.
   ctaLabel: Start a discovery conversation
-  ctaTo: /work-with-me/book
+  ctaTo: /connect
 chapterNav:
   prev:
     to: /work-with-me/services
     title: i · Services & solutions
     label: ← Previous section
   next:
-    to: /work-with-me/book
-    title: iii · Book a discovery
-    label: Next section →
+    to: /podcast
+    title: V · The Podcast
+    label: Next chapter →
 ---

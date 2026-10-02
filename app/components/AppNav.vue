@@ -28,8 +28,8 @@ const open = ref(false)
         </NuxtLink>
       </div>
 
-      <NuxtLink class="btn btn-primary nav-cta" to="/work-with-me/book">
-        Book a conversation
+      <NuxtLink class="btn btn-primary nav-cta" to="/connect">
+        Get in touch
       </NuxtLink>
 
       <button
@@ -52,7 +52,7 @@ const open = ref(false)
       >
         {{ l.label }}
       </NuxtLink>
-      <NuxtLink to="/work-with-me/book" @click="open = false">Book a conversation</NuxtLink>
+      <NuxtLink to="/connect" @click="open = false">Get in touch</NuxtLink>
     </div>
   </nav>
 </template>

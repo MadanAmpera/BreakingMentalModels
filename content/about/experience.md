@@ -15,9 +15,9 @@ projects:
     body: Strategic leadership of the SACE Board's curriculum, assessment, recognition and quality-assurance frameworks — leading systemic education-change initiatives and a team of Faculty Managers.
     with: SACE Board of South Australia
   - stat: Supervision
-    title: Five PhD candidates, four research threads
+    title: Five ongoing PhD candidates
     tags: HDR supervision · ongoing
-    body: Principal or co-supervisor across psychosocial safety, modern slavery in supply chains, work-life enrichment, and psychological contracts in higher education.
+    body: Principal or co-supervisor on doctoral work spanning modern slavery in supply chains, strategic management, work-life enrichment in construction trades, psychological contracts in higher education, and learning theories in marketing education.
     with: University of Adelaide
   - stat: Editorial
     title: Editorial Review Board Member, JME
@@ -25,19 +25,23 @@ projects:
     body: Plus ongoing reviewer roles at the Journal of East European Management Studies, the International Journal of Doctor Studies, and ABDC-ranked journals since 2017.
     with: Academic publishing
   - stat: Public
-    title: The podcast, Season 01
-    tags: 8 episodes · monthly
-    body: Long, unhurried conversations with researchers, practitioners and the occasional skeptic, on the environments that shape us.
+    title: The podcast, Breaking Mental Models
+    tags: Episode 01 live · more in planning
+    body: Honest, unfiltered conversations about the things that shape us, challenge us, and quietly run our lives.
     with: Episode 01 with Asher Wright · live now
 roadHead:
   rn: b
   title: The road behind
 timeline:
   - active: true
-    when: 2021 — present · Adelaide
-    title: Lecturer in Management, University of Adelaide
+    when: 2026 — present · Adelaide
+    title: Senior Manager – Education Services
+    where: SACE Board of South Australia
+    body: Strategic leadership of curriculum, assessment, recognition and quality-assurance frameworks, leading a team of Faculty Managers.
+  - when: 2016 — 2026 · Adelaide
+    title: Sessional Lecturer → Lecturer in Management, University of Adelaide
     where: Program Director (2022–2025) · Course Coordinator (2019–2026)
-    body: A decade-long build from sessional tutor to lecturer — teaching People & Organisations, Managing Organisations & People, and Managing Across Cultures III throughout.
+    body: A decade from sessional tutor to lecturer — teaching People & Organisations, Managing Organisations & People, and Managing Across Cultures III.
   - when: 2019 — 2021 · Adelaide
     title: Credit Sales Associate → Senior Credit Sales Associate
     where: OurMoneyMarket Pty Ltd

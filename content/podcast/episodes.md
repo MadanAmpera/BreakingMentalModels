@@ -5,7 +5,6 @@ hero:
   heading: Every
   headingAccent: conversation.
   lede: One completed, more on the way. Each episode is a different question, a different guest, a different model waiting to be broken. Bookmark this page — it grows.
-banner: Episode links and audio embeds are placeholders — to be replaced with live YouTube / Spotify URLs as episodes publish.
 liveHead:
   label: Now playing
   count: EP 01
@@ -14,8 +13,6 @@ live:
   status: Episode 01 · Now live
   title: Memoirs to Millions × Breaking Mental Models
   body: Ice, water, and the environments that shape us. 22 years of military structure meets a lifetime of crossing worlds — with guest Asher Wright, Army veteran, educator, and host of the Memoirs to Millions podcast.
-  listenLabel: ▶ Listen now
-  listenTo: "#"
   recorded: Recorded 2 Apr 2026 · 4:30pm ET
   details:
     - h: The guest

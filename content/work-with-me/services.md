@@ -169,8 +169,8 @@ glance:
 cta:
   eyebrow: Not sure where to start?
   display: Every engagement begins with one honest conversation.
-  primaryLabel: Book a discovery session
-  primaryTo: /work-with-me/book
+  primaryLabel: Arrange a discovery session
+  primaryTo: /connect
   ghostLabel: See engagement models
   ghostTo: /work-with-me/engagement
 chapterNav:

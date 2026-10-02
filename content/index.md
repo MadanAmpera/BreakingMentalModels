@@ -4,10 +4,8 @@ byline: Education, research & honest conversation — on the environments that s
 contentsYear: "2026"
 ctaDisplay: Say the thing. Have the conversation. Break the model.
 ctaEyebrow: Colophon & contact
-ctaGhostLabel: Get in touch
-ctaGhostTo: /connect
-ctaPrimaryLabel: Book a conversation
-ctaPrimaryTo: /work-with-me/book
+ctaPrimaryLabel: Get in touch
+ctaPrimaryTo: /connect
 epigraphAttribution: The thesis of Breaking Mental Models
 epigraphQuote: There is no such thing as a demotivated person. Motivation never disappears — it simply redirects.
 featureBody: Neither the water nor the ice chose to change — they responded to the environment they were placed in, and stayed in it long enough. Change the environment. Sustain it. The transformation follows.
@@ -19,29 +17,29 @@ featureLinkTo: /work-with-me
 headingAccent: Models
 headingLine1: Breaking
 headingLine2: Mental
-imprint: Adelaide, South Australia · Est. MMXXVI
+imprint: Adelaide, South Australia
 kicker: An academic platform by Dr. Ankit Agarwal
 tiles:
   - roman: I
     countBold: "01"
     countText: The person
     title: About
-    description: From a hostel in Adelaide to the world stage — the story, the CV, and what a thirty-year journey across five countries taught me about resilience.
+    description: From a hostel in Adelaide to the world stage — the story, the CV, and what a journey across five countries taught me about resilience.
     foot: Biography · CV · Awards
     to: /about
   - roman: II
-    countBold: 46+
+    countBold: "46"
     countText: Publications
     title: Research
     description: Publications across four pillars — creative reflexivity, teaching & learning, leadership & teams, and people & organisations — including FT50 and Academy of Management work.
-    foot: Papers · Media · Interviews
+    foot: Publications · Pillars
     to: /research
   - roman: III
     countBold: "03"
     countText: Levels
     title: Education Hub
     description: Every major Organisational Behaviour theory across three levels of analysis — taught first through the life you're already living.
-    foot: Theory · Video · Practice
+    foot: Theory guide · Videos
     to: /education-hub
   - roman: IV
     countBold: "08"
@@ -58,17 +56,10 @@ tiles:
     foot: With Asher Wright
     to: /podcast
   - roman: VI
-    countBold: ★
-    countText: Feedback
-    title: Voices
-    description: Testimonials and student feedback — in their words, on video and in writing.
-    foot: Testimonials · Reviews
-    to: /voices
-  - roman: VII
     countBold: →
     countText: Get in touch
     title: Connect
-    description: Get in touch, see where in the world I am, and find answers to common questions.
-    foot: Contact · Travel · FAQ
+    description: Get in touch by email, phone or message — whichever feels most natural.
+    foot: Email · Phone · Socials
     to: /connect
 ---

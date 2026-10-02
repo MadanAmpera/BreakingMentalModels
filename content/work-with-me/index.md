@@ -56,7 +56,7 @@ domains:
     ct: 1 week + feedback
 chapterIndex:
   label: In this chapter
-  count: 03 sections
+  count: 02 sections
   rows:
     - rn: i
       to: /work-with-me/services
@@ -70,19 +70,13 @@ chapterIndex:
       desc: Single session, programme package, or ongoing partnership — and exactly who each one is built for. Every engagement begins with a complimentary discovery conversation.
       count: "03"
       unit: models
-    - rn: iii
-      to: /work-with-me/book
-      title: Book a discovery session
-      desc: A single, honest conversation about where your organisation is, where you want it to be, and whether we're the right fit. Complimentary, no obligation.
-      count: →
-      unit: free
 cta:
   eyebrow: A note on fit
   display: If you want a one-day fix, we are not the right people.
   displayMax: 20ch
   lead: If you are ready to invest in lasting change — built on psychosocial safety and held long enough to work — we are exactly what you need.
-  primaryLabel: Book a discovery session
-  primaryTo: /work-with-me/book
+  primaryLabel: Arrange a discovery session
+  primaryTo: /connect
   ghostLabel: See all services
   ghostTo: /work-with-me/services
 chapterNav:

@@ -113,45 +113,11 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
         </div>
 
         <div v-if="page.socials?.length" class="socials">
-          <a v-for="(s, i) in page.socials" :key="i" class="soc" :href="s.to">
+          <component :is="s.to ? 'a' : 'div'" v-for="(s, i) in page.socials" :key="i" class="soc" :href="s.to">
             <div class="p">{{ s.p }}</div>
             <div v-if="s.d" class="d">{{ s.d }}</div>
-          </a>
+          </component>
         </div>
-      </div>
-    </section>
-
-    <!-- e · Travel & whereabouts -->
-    <section class="section" style="padding-top: 0;">
-      <div class="wrap">
-        <div v-if="page.secE" :id="page.secE.id" class="sec-head">
-          <span class="rn">{{ page.secE.rn }}</span><h2>{{ page.secE.heading }}</h2>
-        </div>
-        <p v-if="page.secE?.lead" class="lead" style="max-width: 62ch;">{{ page.secE.lead }}</p>
-
-        <div class="travel">
-          <div class="map">
-            <div class="pin">
-              <div class="dot" />
-              <div v-if="page.travelPin" class="pl">{{ page.travelPin }}</div>
-            </div>
-          </div>
-          <div class="list">
-            <p v-if="page.travelBanner" class="client-banner" style="margin-bottom: 20px;">{{ page.travelBanner }}</p>
-            <div v-for="(t, i) in page.travel" :key="i" class="wh">
-              <div class="c">{{ t.city }}<span v-if="t.note">{{ t.note }}</span></div>
-              <div v-if="t.date" class="dt">{{ t.date }}</div>
-            </div>
-          </div>
-        </div>
-
-        <ChapterIndex
-          v-if="page.chapterIndex"
-          :label="page.chapterIndex.label"
-          :count="page.chapterIndex.count"
-          :rows="page.chapterIndex.rows"
-          style="margin-top: 60px; display: block;"
-        />
       </div>
     </section>
 
@@ -316,74 +282,7 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
   color: var(--ink);
   transition: 0.12s;
 }
-.soc:hover { background: var(--accent-tint); }
+a.soc:hover { background: var(--accent-tint); }
 .soc .p { font-family: var(--serif); font-size: 17px; font-weight: 500; }
 .soc .d { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; color: var(--ink-3); margin-top: 2px; }
-
-/* Travel */
-.travel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border: 2px solid var(--ink);
-  margin-top: 8px;
-}
-@media (max-width: 760px) {
-  .travel { grid-template-columns: 1fr; }
-}
-.travel .map {
-  min-height: 300px;
-  border-right: 2px solid var(--ink);
-  position: relative;
-  background: repeating-linear-gradient(135deg, var(--paper-3) 0 11px, transparent 11px 22px), var(--paper-2);
-}
-@media (max-width: 760px) {
-  .travel .map { border-right: 0; border-bottom: 2px solid var(--ink); min-height: 220px; }
-}
-.travel .map .pin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.travel .map .pin .dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--accent);
-  margin: 0 auto 8px;
-  box-shadow: 0 0 0 6px rgba(189, 91, 42, 0.18);
-}
-.travel .map .pin .pl {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-}
-.travel .list { padding: clamp(24px, 3vw, 40px); }
-.travel .list .wh {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 14px 0;
-  border-top: 1px solid var(--line-2);
-}
-.travel .list .wh:first-of-type { border-top: 0; }
-.travel .list .wh .c { font-family: var(--serif); font-size: 18px; font-weight: 500; }
-.travel .list .wh .c span {
-  display: block;
-  font-family: var(--sans);
-  font-size: 13px;
-  color: var(--ink-2);
-  font-weight: 400;
-}
-.travel .list .wh .dt {
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--accent);
-  white-space: nowrap;
-  text-align: right;
-}
 </style>
