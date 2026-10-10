@@ -23,7 +23,7 @@ nav.site .navlinks{ display:flex; gap:22px; margin-left:auto; white-space:nowrap
 nav.site .navlinks a{ text-decoration:none; color:var(--ink-2); font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; transition:.15s; }
 nav.site .navlinks a:hover{ color:var(--accent); }
 nav.site .navlinks a.is-current{ color:var(--ink); border-bottom:1px solid var(--accent); padding-bottom:2px; }
-nav.site .nav-cta{ padding:9px 16px; border-radius:0; font-size:13.5px; }
+nav.site .nav-cta{ padding:9px 16px; border-radius:0; font-size:13.5px; white-space:nowrap; flex:none; }
 @media(max-width:960px){ nav.site .navlinks{ display:none; } }
 
 /* ---------- Page hero (editorial article opener) ---------- */

@@ -19,43 +19,63 @@ headingLine1: Breaking
 headingLine2: Mental
 imprint: Adelaide, South Australia
 kicker: An academic platform by Dr. Ankit Agarwal
+doors:
+  - eyebrow: A · For students & learners
+    title: Learn management
+    titleAccent: through your own life.
+    body: Short video lessons on every major Organisational Behaviour theory. Each one starts in your world — family, friends, school, sport — before it reaches the workplace.
+    listLabel: Video lessons
+    items:
+      - title: Foundational OB models
+        meta: Start here
+      - title: "Motivation: content theories"
+        meta: Individual
+      - title: Group dynamics & teamwork
+        meta: Group
+      - title: Organisational culture
+        meta: Organisational
+    linkLabel: Start learning
+    to: /students
+  - eyebrow: B · For practitioners & organisations
+    title: Change the environment.
+    titleAccent: The rest follows.
+    body: Consulting, training, coaching and assessment — grounded in psychosocial safety and shaped around your organisation's readiness.
+    listLabel: Services
+    items:
+      - title: Consulting
+        meta: 1–2 days + follow-up
+      - title: Training
+        meta: 1 day + workshops
+      - title: Coaching
+        meta: 3–5 sessions / month
+      - title: Assessment
+        meta: 1 week + feedback
+    linkLabel: Explore services
+    to: /organisations
+tilesLabel: Portfolio & more
 tiles:
-  - roman: I
+  - roman: i
     countBold: "01"
     countText: The person
     title: About
     description: From a hostel in Adelaide to the world stage — the story, the CV, and what a journey across five countries taught me about resilience.
     foot: Biography · CV · Awards
     to: /about
-  - roman: II
+  - roman: ii
     countBold: "46"
     countText: Publications
     title: Research
     description: Publications across four pillars — creative reflexivity, teaching & learning, leadership & teams, and people & organisations — including FT50 and Academy of Management work.
     foot: Publications · Pillars
     to: /research
-  - roman: III
-    countBold: "03"
-    countText: Levels
-    title: Education Hub
-    description: Every major Organisational Behaviour theory across three levels of analysis — taught first through the life you're already living.
-    foot: Theory guide · Videos
-    to: /education-hub
-  - roman: IV
-    countBold: "08"
-    countText: Services
-    title: Work With Me
-    description: Consulting, coaching, training and assessment for organisations.
-    foot: For organisations
-    to: /work-with-me
-  - roman: V
+  - roman: iii
     countBold: EP 01
     countText: Now live
     title: The Podcast
     description: Honest, unfiltered conversations that say the thing nobody else will.
     foot: With Asher Wright
     to: /podcast
-  - roman: VI
+  - roman: iv
     countBold: →
     countText: Get in touch
     title: Connect

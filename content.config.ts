@@ -66,6 +66,18 @@ export default defineContentConfig({
         epigraphQuote: z.string().optional(),
         epigraphAttribution: z.string().optional(),
         contentsYear: z.string().optional(),
+        // Two audience doors directly under the hero (students / organisations)
+        doors: z.array(z.object({
+          eyebrow: z.string().optional(),
+          title: z.string(),
+          titleAccent: z.string().optional(),
+          body: z.string().optional(),
+          listLabel: z.string().optional(),
+          items: z.array(z.object({ title: z.string(), meta: z.string().optional() })).optional(),
+          linkLabel: z.string(),
+          to: z.string(),
+        })).optional(),
+        tilesLabel: z.string().optional(),
         tiles: z.array(z.object({
           roman: z.string(),
           countBold: z.string(),
@@ -88,6 +100,24 @@ export default defineContentConfig({
         ctaPrimaryTo: z.string().optional(),
         ctaGhostLabel: z.string().optional(),
         ctaGhostTo: z.string().optional(),
+      }),
+    }),
+
+    // ── Audience landings: /students and /organisations ────────────────────
+    //    Lessons and services are pulled live from the Education Hub and
+    //    Work With Me content, so they are edited in one place only.
+    audiences: defineCollection({
+      type: 'page',
+      source: 'audiences/*.md',
+      schema: z.object({
+        title: z.string(),
+        hero,
+        cta,
+        chapterIndex,
+        secA: secHead,
+        lessonLimit: z.number().optional(),
+        allLabel: z.string().optional(),
+        allTo: z.string().optional(),
       }),
     }),
 
