@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const links = [
+  { label: 'For students', to: '/students' },
+  { label: 'For organisations', to: '/organisations' },
   { label: 'About', to: '/about' },
   { label: 'Research', to: '/research' },
-  { label: 'Education Hub', to: '/education-hub' },
-  { label: 'Work With Me', to: '/work-with-me' },
   { label: 'Podcast', to: '/podcast' },
 ]
 
