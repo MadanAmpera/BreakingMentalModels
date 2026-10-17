@@ -20,7 +20,7 @@ chapterIndex:
       to: /about/experience
       title: Experience & current projects
       desc: Where I'm working now, and the road that led here.
-      count: "04"
+      count: "05"
       unit: in flight
     - rn: iv
       to: /about/awards

@@ -2,9 +2,9 @@
 title: Experience & current projects
 hero:
   roman: Chapter I · § iii
-  heading: Where I am, and what's
+  heading: Where I am and what's
   headingAccent: in the oven.
-  lede: A working timeline of past appointments, and the four things I'm spending most of my time on right now.
+  lede: A working timeline of past appointments, and the five things I'm spending most of my time on right now.
 currentHead:
   rn: a
   title: Current — in flight
@@ -13,22 +13,27 @@ projects:
     title: Senior Manager – Education Services
     tags: SACE Board of South Australia · Jan 2026 – present
     body: Strategic leadership of the SACE Board's curriculum, assessment, recognition and quality-assurance frameworks — leading systemic education-change initiatives and a team of Faculty Managers.
-    with: SACE Board of South Australia
+    with: South Australian Certificate of Education (SACE) Board of South Australia
   - stat: Supervision
     title: Five ongoing PhD candidates
     tags: HDR supervision · ongoing
     body: Principal or co-supervisor on doctoral work spanning modern slavery in supply chains, strategic management, work-life enrichment in construction trades, psychological contracts in higher education, and learning theories in marketing education.
-    with: University of Adelaide
+    with: Adelaide University
   - stat: Editorial
-    title: Editorial Review Board Member, JME
-    tags: Journal of Management Education · since Mar 2026
-    body: Plus ongoing reviewer roles at the Journal of East European Management Studies, the International Journal of Doctor Studies, and ABDC-ranked journals since 2017.
+    title: Editorial Advisory Board Member, BIMTECH
+    tags: BIMTECH Business Perspectives · since Jul 2026
+    body: Plus Editorial Review Board Member at the Journal of Management Education (ranked A in ABDC) and Outstanding Reviewer for JME in 2025; reviewer roles at the Journal of East European Management Studies, the International Journal of Doctoral Studies (Senior Reviewer), and ABDC-ranked journals since 2017.
     with: Academic publishing
   - stat: Public
     title: The podcast, Breaking Mental Models
     tags: Episode 01 live · more in planning
     body: Honest, unfiltered conversations about the things that shape us, challenge us, and quietly run our lives.
     with: Episode 01 with Asher Wright · live now
+  - stat: Volunteer
+    title: Director & Board Member, DreamCricket Australia
+    tags: DreamCricket Australia & South Australia · since Mar 2024
+    body: Plus Honorary Secretary at the Rotary Club of Adelaide, and Founding Member of the Human Intelligence Movement, the United States.
+    with: Volunteer & community service
 roadHead:
   rn: b
   title: The road behind
@@ -36,12 +41,12 @@ timeline:
   - active: true
     when: 2026 — present · Adelaide
     title: Senior Manager – Education Services
-    where: SACE Board of South Australia
+    where: South Australian Certificate of Education (SACE) Board of South Australia
     body: Strategic leadership of curriculum, assessment, recognition and quality-assurance frameworks, leading a team of Faculty Managers.
-  - when: 2016 — 2026 · Adelaide
-    title: Sessional Lecturer → Lecturer in Management, University of Adelaide
+  - when: 2021 — 2026 · Adelaide
+    title: Lecturer in Management, University of Adelaide
     where: Program Director (2022–2025) · Course Coordinator (2019–2026)
-    body: A decade from sessional tutor to lecturer — teaching People & Organisations, Managing Organisations & People, and Managing Across Cultures III.
+    body: Teaching People & Organisations, Managing Organisations & People, and Managing Across Cultures III.
   - when: 2019 — 2021 · Adelaide
     title: Credit Sales Associate → Senior Credit Sales Associate
     where: OurMoneyMarket Pty Ltd
