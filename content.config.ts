@@ -504,6 +504,7 @@ export default defineContentConfig({
             type: z.string().optional(),
             title: z.string(),
             auth: z.string().optional(),
+            url: z.string().optional(),
             badges: z.array(z.object({ label: z.string(), ft50: z.boolean().optional() })).optional(),
           })),
         })).optional(),

@@ -4,10 +4,12 @@ hero:
   roman: Chapter II · § i
   heading: Publications,
   headingAccent: by theme.
-  lede: "The full record, grouped by research theme — from human resource management and reflexivity to leadership, family business and the classroom. Citations in academic format."
+  lede: "The full record, grouped by research theme — from human resource management and reflexivity to leadership, family business and the classroom — plus magazine features, articles and interviews. Citations in academic format."
 stats:
-  - n: "56"
-    lab: Total works
+  - n: "73"
+    lab: Publications
+  - n: "01"
+    lab: Masterclass
   - n: "15"
     lab: Topic areas
   - n: "01"
@@ -27,7 +29,7 @@ pubGroups:
         title: "Stress and satisfaction while working from home during COVID-19: The role of personal and job resources"
         auth: "Ukil, M.I., Ullah, M.S., Islam, M., Tariq, H., & Agarwal, A. · South Asian Journal of Human Resources Management, in print. https://doi.org/10.1177/23220937241246325"
   - title: Reflexivity
-    ct: 5 entries
+    ct: 4 entries
     items:
       - year: "2021"
         type: Journal article
@@ -45,10 +47,6 @@ pubGroups:
         type: Conference paper
         title: "Reflexive and Conversational Literature Reviews: Imaginative Integrated Dialogue Approach"
         auth: "Agarwal, A. · Academy of Management Conference, Alchemy of Qualitative Research (AQR), PDW, Chicago, August 10, 2024"
-      - year: "2024"
-        type: Invited talk
-        title: "Learning Organisational Behaviour: Developing a Reflexive Mindset"
-        auth: "Masterclass in Advanced Learning for Professionals, the University of Adelaide, Australia, October 8, 2024"
   - title: Health
     ct: 1 entry
     items:
@@ -287,6 +285,113 @@ pubGroups:
         type: Case study
         title: "Case Study: Planning, Viterra Australia"
         auth: "Agarwal, A. · In J.R. Schermerhorn et al., Exploring Management, 1st Asia-Pacific Edition, John Wiley & Sons Australia, pp. 209–211"
+  - title: Magazines
+    ct: 7 entries
+    items:
+      - year: "2024"
+        type: Magazine
+        title: "World's Most Visionary Leaders in Education to Watch in 2024"
+        auth: "Agarwal, A. · World's Leaders, 11(3)"
+        url: https://magazines.worldsleaders.com/2024/worlds-most-visionary-leaders-in-education-to-watch-in-2024-nov24/#page=8
+      - year: "2024"
+        type: Magazine
+        title: Most Inspiring Leaders Setting the Bar for Excellence in 2024
+        auth: "Agarwal, A. · Insights Success, 11(11)"
+        url: https://insightssuccess.com/most-inspiring-leaders-setting-the-bar-for-excellence-in-2024-november2024/
+      - year: "2024"
+        type: Magazine
+        title: "Dr Ankit Agarwal: An Accidental and Passionate Educator"
+        auth: "Agarwal, A. · Insights Success, November 11, 2024"
+        url: https://insightssuccess.com/dr-ankit-agarwal-an-accidental-and-passionate-educator/
+      - year: "2024"
+        type: Magazine
+        title: Inspiring Excellence through Education and Fortitude
+        auth: "Agarwal, A. · Passion Vista, 7(2) · https://www.linkedin.com/posts/passion-vista_halloffame2024-inspiration-drankitagarwal-activity-7205848681026117632-2jU5/"
+        url: https://www.passionvista.com/dr-ankit-agarwal/
+      - year: "2024"
+        type: Magazine
+        title: "Educational Innovator: Driving Change in 2024"
+        auth: "Agarwal, A. · CXO Time"
+        url: https://thecxotime.com/awards/educational-innovator-driving-change-in-2024-dr-ankit-agarwal/
+      - year: "2024"
+        type: Magazine
+        title: "Game-Changing Innovators: Top Business Icons Making Waves in 2024"
+        auth: "Agarwal, A. · The Executive Lens, September 2024"
+        url: https://theexecutivelens.com/magazine/game-changing-innovators-top-business-icons-making-waves-in-2024/
+      - year: "2024"
+        type: Magazine
+        title: Passionate and Visionary Educator of the Year 2024
+        auth: "Agarwal, A. · CIO Today"
+        url: https://theciotoday.com/awards/passionate-and-visionary-educator-of-the-year-2024-ankit-agarwal/
+  - title: Online Articles
+    ct: 5 entries
+    items:
+      - year: "2025"
+        type: Online article
+        title: Early Educator Institute Award - Dr Ankit Agarwal
+        auth: "Ratzmer, M. · The University of Adelaide Learning & Teaching"
+        url: https://www.adelaide.edu.au/learning/news/list/2025/07/22/early-educator-institute-award-dr-ankit-agarwal
+      - year: "2024"
+        type: Online article
+        title: "Four ways to tap into students' family experiences for better learning"
+        auth: "Agarwal, A. · Times Higher Education & Inside Higher Ed, Campus"
+        url: https://www.timeshighereducation.com/campus/four-ways-tap-students-family-experiences-better-learning
+      - year: "2024"
+        type: Online article
+        title: "Expert opinion: Is your team aligned with your company's mission?"
+        auth: "Agrawal, A. · The Big Smoke Australia"
+        url: https://thebigsmoke.com.au/2024/07/26/expert-opinion-is-your-team-aligned-with-your-companys-mission/
+      - year: "2023"
+        type: Online article
+        title: "Students' life stories can bridge the gap between theory and practice"
+        auth: "Agarwal, A. · Times Higher Education & Inside Higher Ed, Campus"
+        url: https://www.timeshighereducation.com/campus/students-life-stories-can-bridge-gap-between-theory-and-practice
+      - year: "2023"
+        type: Online article
+        title: "This is how I [Ankit Agarwal] teach"
+        auth: "Ratzmer, M. · The University of Adelaide Learning & Teaching"
+        url: https://www.adelaide.edu.au/learning/news/list/2023/08/23/this-is-how-i-teach
+  - title: Online Interviews
+    ct: 6 entries
+    items:
+      - year: "2025"
+        type: Interview
+        title: "Ankit's Path to Success: Continuously Overcoming Challenges with Grit"
+        auth: The EliteX
+        url: https://theelitex.com/ankits-path-to-success-continuously-overcoming-challenges-with-grit/
+      - year: "2024"
+        type: Interview
+        title: Inspiring Excellence through Education and Fortitude
+        auth: Passion Vista
+        url: https://www.youtube.com/watch?v=hMcBmTQUh9k
+      - year: "2024"
+        type: Interview
+        title: Driving Force for the Positive Change in the Education Industry
+        auth: Conference 2.0
+        url: https://medium.com/@Education_2.0_Dubai/dr-ankit-agarwal-recognized-with-the-outstanding-leadership-award-at-the-education-2-0-8446da7bfa7c
+      - year: "2024"
+        type: Interview
+        title: In Conversation with Dr. Ankit Agarwal for the Outstanding Leadership Award in Education
+        auth: Education 2.0
+        url: https://www.youtube.com/watch?v=8xKpgqU_M8Q
+      - year: "2023"
+        type: Interview
+        title: "Teaching Awards interview features your insightful advice and experiences, aimed at guiding those who are planning to apply for the award."
+        auth: "Excellence in Teaching · Posted on our Teach Excellence website and featured in our August Newsletter."
+        url: https://universityofadelaide.app.box.com/s/4j4vjmwlz077ptry98vtu880s3lvd4ii
+      - year: "2019"
+        type: Interview
+        title: This ice cream empire can teach business grads valuable things about soft skills
+        auth: "Kong, L. · Study International News, Malaysia, October 14, 2019"
+        url: https://studyinternational.com/
+  - title: Masterclasses
+    ct: 1 entry
+    items:
+      - year: "2024"
+        type: Masterclass
+        title: "Learning Organisational Behaviour: Developing a Reflexive Mindset"
+        auth: "Invited to present a Masterclass in Advanced Learning for Professionals, the University of Adelaide, Australia, October 8, 2024"
+        url: https://www.adelaide.edu.au/study/postgraduate/advanced-learning-for-professionals
 chapterNav:
   prev:
     to: /research
