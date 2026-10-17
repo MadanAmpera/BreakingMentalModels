@@ -5,6 +5,8 @@ defineProps<{
   heading?: string
   headingAccent?: string
   lede?: string
+  ledeEm?: string
+  ledePost?: string
   meta?: { lab: string, val: string }[]
 }>()
 </script>
@@ -21,7 +23,7 @@ defineProps<{
       </p>
       <p v-if="roman" class="roman">{{ roman }}</p>
       <h1>{{ heading }} <span v-if="headingAccent" class="it">{{ headingAccent }}</span></h1>
-      <p v-if="lede" class="lede">{{ lede }}</p>
+      <p v-if="lede" class="lede">{{ lede }} <em v-if="ledeEm" class="it">{{ ledeEm }}</em> {{ ledePost }}</p>
       <div v-if="meta?.length" class="meta-row">
         <div v-for="(m, i) in meta" :key="i">
           <span class="lab">{{ m.lab }}</span><span class="val">{{ m.val }}</span>

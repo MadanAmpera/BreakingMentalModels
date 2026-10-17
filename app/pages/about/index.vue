@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData('about', () =>
 
 useSeoMeta({
   title: () => `${page.value?.title ?? 'About'} — Breaking Mental Models`,
-  description: () => page.value?.hero?.lede,
+  description: () => [page.value?.hero?.lede, page.value?.hero?.ledeEm, page.value?.hero?.ledePost].filter(Boolean).join(' '),
 })
 
 const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
@@ -19,6 +19,8 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
       :heading="page.hero?.heading"
       :heading-accent="page.hero?.headingAccent"
       :lede="page.hero?.lede"
+      :lede-em="page.hero?.ledeEm"
+      :lede-post="page.hero?.ledePost"
       :meta="page.hero?.meta"
     />
 
@@ -30,6 +32,7 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
             <span class="eyebrow-block">{{ page.portrait?.eyebrow }}</span>
             <h2>{{ page.portrait?.heading }} <em v-if="page.portrait?.headingEm">{{ page.portrait.headingEm }}</em></h2>
             <p v-for="(para, i) in page.portrait?.paragraphs" :key="i">{{ para }}</p>
+            <p v-if="page.portrait?.closing">{{ page.portrait.closing }} <em v-if="page.portrait.closingEm">{{ page.portrait.closingEm }}</em>{{ page.portrait.closingPost }}</p>
             <p class="sig">{{ page.portrait?.signature }}</p>
           </div>
         </div>
@@ -109,6 +112,7 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
   max-width: 42ch;
   margin: 0 0 1em;
 }
+.portrait .body p em { font-style: italic; color: var(--accent); }
 .portrait .body .sig {
   margin-top: 28px;
   font-family: var(--serif);

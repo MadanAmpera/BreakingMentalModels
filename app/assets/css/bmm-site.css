@@ -59,6 +59,7 @@ html[data-theme="dark"] nav.site .brand .logo img{ height:48px; }
   font-family:var(--serif); font-size:clamp(20px,2.2vw,26px); line-height:1.45; font-weight:400;
   color:var(--ink-2); max-width:46ch; margin-top:28px;
 }
+.page-hero .lede .it{ font-style:italic; color:var(--accent); }
 .page-hero .meta-row{
   display:flex; flex-wrap:wrap; gap:30px 40px; margin-top:48px;
   padding-top:24px; border-top:1px solid var(--line);
