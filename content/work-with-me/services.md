@@ -20,9 +20,9 @@ serviceGroups:
           - term: Creating safe spaces
             desc: Establishing conditions where employees can speak freely without fear.
         timeline:
-          - d: 1–2 days
+          - d: 3 days
             w: Initial facilitated assessment
-          - d: 1–2 wks
+          - d: 2–4 wks
             w: Follow-up sessions, tailored to the team
         bestFor: Teams with recurring miscommunication, unresolved friction, or stalled collaboration — any industry or size.
       - rn: ii
@@ -37,10 +37,10 @@ serviceGroups:
           - term: Flexibility in practice
             desc: A culture where adapting the plan is a strength, not a failure.
         timeline:
-          - d: 1 day
-            w: Core training session
+          - d: 2 days
+            w: Core training sessions
           - d: 2–4 wks
-            w: Optional follow-up workshops to embed practice
+            w: Organised follow-up workshops to embed practice
         bestFor: Teams navigating real complexity and competing demands who want to act with agility and rigour.
       - rn: iii
         id: coaching
@@ -52,10 +52,10 @@ serviceGroups:
           - term: Fostering accountability
             desc: Cultures of responsibility where people own outcomes without fear of blame.
         timeline:
-          - d: 1–2 hrs
+          - d: 2–3 hrs
             w: Per coaching session
-          - d: 3–5
-            w: Sessions over the course of one month
+          - d: 4–6
+            w: Coaching sessions, around four a month
         bestFor: Senior, mid and emerging leaders navigating situations where the right answer is neither obvious nor comfortable.
       - rn: iv
         id: assessment
@@ -69,10 +69,10 @@ serviceGroups:
           - term: Aligned performance culture
             desc: Where accountability and psychological safety coexist.
         timeline:
-          - d: 1 wk
+          - d: 2 wks
             w: Comprehensive assessment
           - d: 1 day
-            w: Feedback & alignment session with stakeholders
+            w: Feedback & recommendations session with stakeholders
         bestFor: Organisations whose performance frameworks may be quietly driving the behaviours they're trying to change.
   - rn: Chapter 2
     title: Organisational development
@@ -144,16 +144,16 @@ glance:
   rows:
     - service: Consulting · Hidden conflicts
       focus: Assumptions, safe dialogue, team miscommunication
-      timeline: 1–2 days + 1–2 wks
+      timeline: 3 days + 2–4 wks
     - service: Training · Agile mindset
       focus: Decision-making, workload, flexibility
-      timeline: 1 day + 2–4 wks
+      timeline: 2 days + 2–4 wks
     - service: Coaching · Ethical leadership
       focus: Ethical dilemmas, accountability culture
-      timeline: 3–5 sessions / month
+      timeline: 2–3 hrs × 4–6 sessions
     - service: Assessment · KPI alignment
       focus: Performance metrics, feedback channels
-      timeline: 1 wk + 1 day
+      timeline: 2 wks + 1 day
     - service: Strategic planning
       focus: Agile goal-setting, timeline management
       timeline: 2 days + ongoing

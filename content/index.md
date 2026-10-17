@@ -43,13 +43,13 @@ doors:
     listLabel: Services
     items:
       - title: Consulting
-        meta: 1–2 days + follow-up
+        meta: 3 days + follow-ups
       - title: Training
-        meta: 1 day + workshops
+        meta: 2 days + organised workshops
       - title: Coaching
-        meta: 3–5 sessions / month
+        meta: 4 sessions / month
       - title: Assessment
-        meta: 1 week + feedback
+        meta: 2 weeks + feedback & recommendations
     linkLabel: Explore services
     to: /organisations
 tilesLabel: Portfolio & more
