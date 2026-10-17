@@ -4,19 +4,19 @@ hero:
   roman: Chapter I · § iv
   heading: Quietly,
   headingAccent: honoured.
-  lede: Forty-four awards and honours — fifteen for teaching alone — listed across five categories.
+  lede: Forty-eight awards and honours — sixteen for teaching alone — listed across five categories.
 stats:
-  - n: "44"
+  - n: "48"
     lab: Awards & honours
-  - n: "15"
+  - n: "16"
     lab: Teaching awards
-  - n: "09"
+  - n: "13"
     lab: Research honours
   - n: "05"
     lab: Categories
 awardGroups:
   - title: Teaching & educational contributions
-    meta: 15 honours · 2017 — 2025
+    meta: 16 honours · 2017 — 2025
     items:
       - yr: "2025"
         title: Outstanding Reviewer, Journal of Management Education
@@ -33,6 +33,10 @@ awardGroups:
       - yr: "2025"
         title: Certificate of Appreciation — Excellence & Innovation in Education
         where: EliteX
+        badge: EliteX
+      - yr: "2025"
+        title: "10 Elite Business Leaders in Education"
+        where: The EliteX
         badge: EliteX
       - yr: 2024 —
         title: Dr. Ankit Agarwal Prize for Applying Management Theoretical Concepts in Life
@@ -79,8 +83,20 @@ awardGroups:
         where: Australia
         badge: Faculty
   - title: Research & academic contributions
-    meta: 09 honours · 2017 — 2025
+    meta: 13 honours · 2017 — 2026
     items:
+      - yr: "2026"
+        title: Invited to join the Editorial Advisory Board
+        where: BIMTECH Business Perspectives
+        badge: BIMTECH
+      - yr: "2026"
+        title: Invited to join the Editorial Review Board (ranked A in ABDC)
+        where: Journal of Management Education (JME)
+        badge: JME
+      - yr: "2025"
+        title: "Session Chair — Think Again! Revisiting Established Models Through New Lenses"
+        where: 85th Academy of Management Conference, Copenhagen, Denmark
+        badge: AOM
       - yr: "2024"
         title: Best Development Paper Award — Operations, Logistics & Supply Chain Management
         where: British Academy of Management Conference
@@ -97,7 +113,11 @@ awardGroups:
         title: Best Reviewer Award
         where: Academy of International Business (AIB), Seoul, South Korea
         badge: AIB
-      - yr: 2023, 2021
+      - yr: "2023"
+        title: Outstanding Reviewer Award
+        where: Academy of Management, United States
+        badge: AOM
+      - yr: "2021"
         title: Outstanding Reviewer Award
         where: Academy of Management, United States
         badge: AOM
@@ -184,7 +204,7 @@ awardGroups:
         where: PC World, UK
         badge: PC World
   - title: Additional recognitions
-    meta: 05 honours · 2017 — 2022
+    meta: 04 honours · 2017 — 2022
     items:
       - yr: "2022"
         title: Best Paper with Practical Implications Award
@@ -198,10 +218,6 @@ awardGroups:
         title: Adelaide Graduate Award
         where: University of Adelaide
         badge: UoA
-      - yr: "2021"
-        title: Outstanding Reviewer Award
-        where: Academy of Management, United States
-        badge: AOM
       - yr: "2022"
         title: Best Management Text Award — Outstanding Tertiary Resource
         where: Four contributed case studies

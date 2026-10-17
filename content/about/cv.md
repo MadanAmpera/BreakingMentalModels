@@ -19,12 +19,15 @@ cvSections:
         where: University of Greenwich, London, UK
       - yr: "2003 — 2005"
         title: BA (Hons), Management & Information Systems
-        where: Dublin Business School, Ireland · Liverpool John Moores University (UK) degree
+        where: Dublin Business School, Republic of Ireland · Liverpool John Moores University (UK) degree
       - yr: "2003"
         title: Diploma in Business Studies
-        where: Dublin Business School, Ireland
+        where: Dublin Business School, Republic of Ireland
   - title: Academic appointments
     items:
+      - yr: "2026 —"
+        title: Honorary Adjunct — Lecturer in Management & Organisational Behaviour
+        where: College of Business & Law, Adelaide University
       - yr: "2021 — 2026"
         title: Lecturer in Management
         where: University of Adelaide — People & Organisations, Managing Organisations & People, Managing Across Cultures III
@@ -33,13 +36,13 @@ cvSections:
         where: University of Adelaide
       - yr: "2019 — 2026"
         title: Course Coordinator
-        where: University of Adelaide
+        where: Undergraduate Program, Bachelor of Business · University of Adelaide
       - yr: "2016 — 2021"
         title: Sessional Lecturer / Academic Tutor / Workshop Facilitator
         where: University of Adelaide
   - title: Doctoral supervision
     items:
-      - yr: "2023 — 2026"
+      - yr: "2023 — 2027"
         title: "PhD, Ms Ngoc Hanh Thi Tran — Network Orchestration in Modern Slavery Mitigation"
         where: Principal supervisor, with A/Prof Sajad Fayezi & Dr Maryam Zomorrodi
       - yr: "2023 — 2027"
@@ -47,10 +50,10 @@ cvSections:
         where: Principal supervisor, with Mr David Pender & Dr Peter Sandiford
       - yr: "2023 — 2030"
         title: "PhD, Ms Linda Magin — Work-Life Enrichment in Construction Trades"
-        where: Principal supervisor, with Dr Peter Sandiford · part-time
+        where: Principal supervisor, with Dr Lynette Washington · part-time
       - yr: "2025 — 2029"
         title: "PhD, Ms Jean Marie-See — Psychological Contracts of Academics"
-        where: Principal supervisor, with Christian Hoyer, Dean Wilkie & Peter Sandiford
+        where: Principal supervisor, with Christian Hoyer & Dean Wilkie
       - yr: "2024 — 2028"
         title: "PhD, Ms Maria Neledva — Learning Theories in HDR Marketing"
         where: Co-supervisor, with Dr Dean Wilkie
@@ -63,14 +66,17 @@ cvSections:
   - title: Service & editorial
     items:
       - yr: "2026 —"
+        title: Editorial Advisory Board Member
+        where: BIMTECH Business Perspectives
+      - yr: "2026 —"
         title: Editorial Review Board Member
         where: Journal of Management Education (JME)
       - yr: "2025 —"
-        title: Early Career Researcher
+        title: Early Career Researcher Member Reviewer
         where: Journal of East European Management Studies (JEEMS)
       - yr: "2024 —"
-        title: Board Member & Associate Reviewer
-        where: International Journal of Doctor Studies (IJDS)
+        title: Board Member & Senior Reviewer
+        where: International Journal of Doctoral Studies (IJDS)
       - yr: "2017 —"
         title: Academic Reviewer
         where: ABDC-ranked journals

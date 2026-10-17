@@ -6,6 +6,8 @@ const hero = z.object({
   heading: z.string().optional(),
   headingAccent: z.string().optional(),
   lede: z.string().optional(),
+  ledeEm: z.string().optional(),
+  ledePost: z.string().optional(),
   meta: z.array(z.object({ lab: z.string(), val: z.string() })).optional(),
 }).optional()
 
@@ -137,6 +139,10 @@ export default defineContentConfig({
           heading: z.string().optional(),
           headingEm: z.string().optional(),
           paragraphs: z.array(z.string()).optional(),
+          // Closing paragraph with an accent phrase: closing <em>closingEm</em>closingPost
+          closing: z.string().optional(),
+          closingEm: z.string().optional(),
+          closingPost: z.string().optional(),
           signature: z.string().optional(),
           imageLabel: z.string().optional(),
           image: z.string().optional(),
@@ -157,6 +163,8 @@ export default defineContentConfig({
           heading: z.string().optional(),
           headingEm: z.string().optional(),
           dek: z.string().optional(),
+          dekEm: z.string().optional(),
+          dekPost: z.string().optional(),
           author: z.string().optional(),
           readTime: z.string().optional(),
           updated: z.string().optional(),
@@ -496,6 +504,7 @@ export default defineContentConfig({
             type: z.string().optional(),
             title: z.string(),
             auth: z.string().optional(),
+            url: z.string().optional(),
             badges: z.array(z.object({ label: z.string(), ft50: z.boolean().optional() })).optional(),
           })),
         })).optional(),

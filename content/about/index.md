@@ -8,7 +8,7 @@ chapterIndex:
       to: /about/biography
       title: Biography & story
       desc: The long version — India, Dublin, the UK, the US, and a hostel in Adelaide. In my own words.
-      count: 6 min
+      count: 7 min
       unit: essay
     - rn: ii
       to: /about/cv
@@ -20,13 +20,13 @@ chapterIndex:
       to: /about/experience
       title: Experience & current projects
       desc: Where I'm working now, and the road that led here.
-      count: "04"
+      count: "05"
       unit: in flight
     - rn: iv
       to: /about/awards
       title: Awards & honours
-      desc: Forty-four awards and honours — fifteen of them for teaching.
-      count: "44"
+      desc: Forty-eight awards and honours — sixteen of them for teaching.
+      count: "48"
       unit: honours
 chapterNav:
   prev:
@@ -39,19 +39,22 @@ chapterNav:
     label: Next chapter →
 cta:
   eyebrow: Get in touch
-  display: Education is about connecting with others, sharing experiences, and growing together.
+  display: Education is about connecting with others, dialoguing on experiences, and giving each other an opportunity to grow co-constructively.
+  displayMax: 26ch
   primaryLabel: Get in touch
   primaryTo: /connect
 hero:
   roman: Chapter I · The person
   heading: A journey across
   headingAccent: five countries.
-  lede: The story of Dr. Ankit Agarwal — educator, researcher, and lifelong learner whose journey from India to the world stage is defined by resilience, curiosity, and the belief that every challenge presents an opportunity for growth.
+  lede: "The story of Dr. Ankit Agarwal — a lifelong learner whose journey to this world stage is described by resilience and curiosity. Educated and employed in five different countries, his belief in the power of dialogue, with oneself and others, saw him discover"
+  ledeEm: unknowns
+  ledePost: "and find a methodical approach to growth amidst challenges."
   meta:
     - lab: Currently
       val: Adelaide, SA
     - lab: Practice
-      val: Researcher · educator
+      val: Practitioner of research and education
     - lab: Domain
       val: Organisational Behaviour
 journey:
@@ -72,8 +75,10 @@ portrait:
   heading: Resilience, curiosity,
   headingEm: and growth.
   paragraphs:
-    - My journey into education began at the tender age of five. Growing up in India, I was captivated by the titles held by my relatives — Doctors, Engineers, Advocates — and I dreamed of earning a title of my own, believing that education was the key to unlocking my future.
-    - Throughout my struggles, I learned that each challenge was a small success step, shaping my resilience and determination. Education is not just about acquiring knowledge; it's about connecting with others, sharing experiences, and growing together.
+    - My journey into education began at the tender age of five. Growing up in India, I was captivated by the titles held by my relatives — Doctors, Engineers, Lawyers — and I dreamed of earning a title of my own, believing that education was the key to unlocking my future.
+  closing: "Throughout my struggles, I learned that each challenge was a small success step, shaping my resilience and determination. Education is not just about acquiring knowledge; it's about connecting with others,"
+  closingEm: dialoguing on experiences
+  closingPost: ", and giving each other an opportunity to grow co-constructively."
   signature: — Ankit
   imageLabel: Portrait — Dr. Agarwal
   image: ""

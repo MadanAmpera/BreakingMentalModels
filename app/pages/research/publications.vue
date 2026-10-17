@@ -45,7 +45,10 @@ const crumb = [
           <div v-for="(pub, pi) in group.items" :key="pi" class="pub">
             <span class="meta"><span class="yr">{{ pub.year }}</span>{{ pub.type }}</span>
             <div>
-              <div class="ttl">{{ pub.title }}</div>
+              <div class="ttl">
+                <a v-if="pub.url" :href="pub.url" target="_blank" rel="noopener">{{ pub.title }}</a>
+                <template v-else>{{ pub.title }}</template>
+              </div>
               <div v-if="pub.auth" class="auth">{{ pub.auth }}</div>
             </div>
             <div v-if="pub.badges?.length" class="badges">
@@ -123,6 +126,13 @@ const crumb = [
   color: var(--ink);
   letter-spacing: -0.005em;
 }
+.pub .ttl a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--line-2);
+  text-underline-offset: 3px;
+}
+.pub .ttl a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .pub .auth { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin-top: 8px; }
 .pub .badges {
   display: flex;

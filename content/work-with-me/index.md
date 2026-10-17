@@ -41,19 +41,19 @@ domains:
   - rn: i
     title: Consulting
     body: Surfacing the hidden conflicts, miscommunications and structural tensions no one is naming but everyone is feeling.
-    ct: 1–2 days + follow-up
+    ct: 3 days + follow-ups
   - rn: ii
     title: Training
     body: Not a course — a capability-building process for agile thinking and decision-making under real complexity.
-    ct: 1 day + workshops
+    ct: 2 days + organised workshops
   - rn: iii
     title: Coaching
-    body: Guiding leaders through the ethical grey zones, where the quality of the decision depends on the quality of the thinking.
-    ct: 3–5 sessions / month
+    body: Co-constructively working with leaders through the ethical grey zones, where the quality of the decision depends on the quality of the thinking.
+    ct: 4 sessions / month
   - rn: iv
     title: Assessment
     body: Checking whether your KPIs measure what matters — or quietly drive the behaviours you are trying to change.
-    ct: 1 week + feedback
+    ct: 2 weeks + feedback & recommendations
 chapterIndex:
   label: In this chapter
   count: 02 sections

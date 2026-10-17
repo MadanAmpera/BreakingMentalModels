@@ -43,13 +43,13 @@ doors:
     listLabel: Services
     items:
       - title: Consulting
-        meta: 1–2 days + follow-up
+        meta: 3 days + follow-ups
       - title: Training
-        meta: 1 day + workshops
+        meta: 2 days + organised workshops
       - title: Coaching
-        meta: 3–5 sessions / month
+        meta: 4 sessions / month
       - title: Assessment
-        meta: 1 week + feedback
+        meta: 2 weeks + feedback & recommendations
     linkLabel: Explore services
     to: /organisations
 tilesLabel: Portfolio & more
@@ -62,7 +62,7 @@ tiles:
     foot: Biography · CV · Awards
     to: /about
   - roman: ii
-    countBold: "46"
+    countBold: "73"
     countText: Publications
     title: Research
     description: Publications across four pillars — creative reflexivity, teaching & learning, leadership & teams, and people & organisations — including FT50 and Academy of Management work.

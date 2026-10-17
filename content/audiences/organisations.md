@@ -46,7 +46,7 @@ chapterIndex:
       to: /research
       title: Research
       desc: Publications across four pillars, including FT50 and Academy of Management work.
-      count: "46"
+      count: "73"
       unit: publications
 cta:
   eyebrow: Not sure where to start?

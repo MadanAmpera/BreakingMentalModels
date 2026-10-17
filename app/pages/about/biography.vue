@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData('about-biography', () =>
 
 useSeoMeta({
   title: () => `${page.value?.title ?? 'Biography'} — Breaking Mental Models`,
-  description: () => page.value?.essay?.dek,
+  description: () => [page.value?.essay?.dek, page.value?.essay?.dekEm, page.value?.essay?.dekPost].filter(Boolean).join(' '),
 })
 </script>
 
@@ -19,7 +19,7 @@ useSeoMeta({
         <div class="top-rule" style="margin-top: 30px;" />
         <p class="kick">{{ page.essay?.kick }}</p>
         <h1>{{ page.essay?.heading }} <em v-if="page.essay?.headingEm">{{ page.essay.headingEm }}</em></h1>
-        <p class="dek">{{ page.essay?.dek }}</p>
+        <p class="dek">{{ page.essay?.dek }} <em v-if="page.essay?.dekEm">{{ page.essay.dekEm }}</em> {{ page.essay?.dekPost }}</p>
         <p class="byline">
           {{ page.essay?.author }}<template v-if="page.essay?.readTime"><span class="dot">·</span>{{ page.essay.readTime }}</template><template v-if="page.essay?.updated"><span class="dot">·</span>{{ page.essay.updated }}</template>
         </p>
@@ -90,6 +90,7 @@ useSeoMeta({
   margin: 24px auto 0;
   line-height: 1.5;
 }
+.essay-open .dek em { color: var(--accent); }
 .essay-open .byline {
   font-family: var(--mono);
   font-size: 11.5px;

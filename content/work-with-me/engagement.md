@@ -48,7 +48,7 @@ principle:
   displayPre: There is no such thing as a
   displayEm: demotivated
   displayPost: person.
-  lead: Motivation never disappears — it redirects. When someone disengages or leaves, their motivation is fully intact; it is simply pointed elsewhere. Stop trying to inject energy. Start asking what is draining it. You cannot fix what is inside someone — but you can change what surrounds them.
+  lead: Motivation never disappears — it redirects. When someone disengages or leaves, their motivation is fully intact; it is simply pointed elsewhere. Stop trying to inject energy. Start asking what is draining it. You cannot fix what is someone else's to control — but you can change what surrounds them.
   ctaLabel: Start a discovery conversation
   ctaTo: /connect
 chapterNav:
