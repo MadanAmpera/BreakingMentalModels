@@ -125,9 +125,9 @@ useSeoMeta({
 
 /* TWO DOORS */
 .doors-section { padding-bottom: clamp(56px, 8vw, 100px); }
-.doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: var(--ink); border: 2px solid var(--ink); }
+.doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); }
 @media (max-width: 820px) { .doors { grid-template-columns: 1fr; } }
-.door { display: flex; flex-direction: column; gap: 18px; padding: clamp(28px, 4vw, 52px); background: var(--paper-2); color: var(--ink); text-decoration: none; transition: background 0.18s ease; }
+.door { display: flex; flex-direction: column; gap: 18px; padding: clamp(28px, 4vw, 52px); border: 2px solid var(--ink); background: var(--paper-2); color: var(--ink); text-decoration: none; transition: background 0.18s ease; }
 .door:hover { background: var(--accent-tint); }
 .door h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.02; letter-spacing: -0.022em; max-width: 14ch; }
 .door h2 em { color: var(--accent); }
