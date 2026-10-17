@@ -25,8 +25,8 @@ chapterIndex:
     - rn: iv
       to: /about/awards
       title: Awards & honours
-      desc: Forty-four awards and honours — fifteen of them for teaching.
-      count: "44"
+      desc: Forty-eight awards and honours — sixteen of them for teaching.
+      count: "48"
       unit: honours
 chapterNav:
   prev:
