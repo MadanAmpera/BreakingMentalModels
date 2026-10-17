@@ -2,13 +2,13 @@
 title: Research
 hero:
   roman: Chapter II · The scholarship
-  heading: Forty-six papers,
+  heading: Seventy-three academic publications,
   headingAccent: four pillars.
-  lede: Dr. Agarwal's research spans a wide range of disciplines — from human resource management and psychosocial safety to leadership, family business, and creative writing.
+  lede: Dr. Agarwal's research is across a range of disciplines — from organisational behaviour, human resource management and psychosocial safety to leadership, family business, and creative writing and methods.
 stats:
-  - n: "46"
-    lab: Publications
-  - n: "13"
+  - n: "73"
+    lab: Academic publications
+  - n: "15"
     lab: Topic areas
   - n: "01"
     lab: FT50 paper
@@ -27,7 +27,7 @@ pillars:
     body: Student-Centred Experiential Learning (SCEL) — using students' own family and lived experience as the lens through which organisational behaviour is taught.
   - rn: iii
     title: Leadership & Teams
-    body: Conceptual and applied work on leadership formation, engineering leadership, and leader–follower dynamics in an increasingly AI-mediated workplace.
+    body: Conceptual and applied work on leadership formation, engineering leadership, and leader–follower dynamics in an increasingly AI-mediated workplace — including the Shepherding Engineering Leadership (SEL) and Side-by-Side Leading (SSL) methods of leading people and managing organisational tasks.
   - rn: iv
     title: People & Organisations
     body: Psychosocial safety, motivation and dissatisfaction, and the environmental conditions that determine whether people can speak up at work.
@@ -51,8 +51,8 @@ chapterIndex:
       to: /research/publications
       title: Publications
       desc: The full record — grouped by research theme. Citations in academic format, with DOIs where available.
-      count: "46"
-      unit: papers
+      count: "73"
+      unit: publications
 cta:
   eyebrow: For academic peers
   display: Looking for the full citation index?

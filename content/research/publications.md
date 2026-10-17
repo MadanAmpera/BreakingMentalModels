@@ -6,9 +6,9 @@ hero:
   headingAccent: by theme.
   lede: "The full record, grouped by research theme — from human resource management and reflexivity to leadership, family business and the classroom. Citations in academic format."
 stats:
-  - n: "46"
+  - n: "56"
     lab: Total works
-  - n: "13"
+  - n: "15"
     lab: Topic areas
   - n: "01"
     lab: FT50 paper
@@ -16,8 +16,12 @@ stats:
     lab: First publication
 pubGroups:
   - title: Human Resource Management
-    ct: 1 entry
+    ct: 2 entries
     items:
+      - year: "2026"
+        type: Journal article
+        title: "Making sense of digital transformation in HRM: an interpretative phenomenological analysis of HR professionals' experiences and identities"
+        auth: "Agarwal, A., Bhattacharjee, B., Chakravorty, A., & Poulose, S. · International Studies of Management & Organization, 1–28. https://doi.org/10.1080/00208825.2026.2700500"
       - year: "2024"
         type: Journal article
         title: "Stress and satisfaction while working from home during COVID-19: The role of personal and job resources"
@@ -64,8 +68,12 @@ pubGroups:
         title: "Leveraging network orchestration to address modern slavery risks in the supply chain track: Operations, logistics and supply chain management"
         auth: "Tran, N.H.T., Fayezi, S., Zomorrodi, M., & Agarwal, A. · British Academy of Management 2024 Conference, Nottingham Trent University, Nottingham: UK"
   - title: Leadership
-    ct: 6 entries
+    ct: 7 entries
     items:
+      - year: "2025"
+        type: Conference paper
+        title: "Middle Management, Innovation, and Organisational Dialogue: Power, Trust, and Space in Practice"
+        auth: "Agarwal, A., & Gulati, R. · The Australia New Zealand International Business Association & Academy of International Business-Oceania Conference, Fiji National University, Namaka Campus, Nadi, Fiji, November 10–13, 2025"
       - year: "2024"
         type: Book chapter
         title: "Shepherding Engineering Leadership: Leading With a Combination of Timeless Wisdom and Modern Insights"
@@ -91,8 +99,12 @@ pubGroups:
         title: "Combining intuition and artificial intelligence in leadership decision-making: Why and how?"
         auth: "Leonie, H., & Agarwal, A. · Leading and Managing in the Digital Era (LMDE) Conference, Athens, Greece, June 20–23, 2023"
   - title: Motivation
-    ct: 1 entry
+    ct: 2 entries
     items:
+      - year: "2026"
+        type: Conference paper
+        title: "Co-destructive motivation: tri-actor framework of conflict in blended learning environments"
+        auth: "Maria, N., Wilkie, D., & Agarwal, A. · Australia & New Zealand Marketing Academy (ANZMAC) Conference, Massey University, Auckland, New Zealand, November 30 – December 2, 2026"
       - year: "2024"
         type: Conference paper
         title: A conceptual exploration of motivation types as antecedents to subsequent tertiary learning outcomes
@@ -104,13 +116,43 @@ pubGroups:
         type: Conference proceedings
         title: "Managing Groups: Skills to Uncover the Pre-forming Stage and Distributing Roles"
         auth: "Agarwal, A. · Academy of Management Proceedings (Vol. 2022, No. 1, p. 15389), Seattle, WA. Briarcliff Manor, NY 10510: Academy of Management"
-  - title: MBA
+  - title: Psychosocial Safety
     ct: 2 entries
+    items:
+      - year: "2025"
+        type: Book chapter
+        title: "The role of safe spaces: Fostering psychological and social safety for collective wellness and inclusion"
+        auth: "Agarwal, A. · In Marques, J. (Ed.), Encyclopedia of Diversity, Equity, Inclusion and Spirituality, Springer, Cham. https://doi.org/10.1007/978-3-031-32257-0_166-1"
+      - year: "2025"
+        type: Conference proceedings
+        title: "Rethinking Team Psychological Safety: A Symbolic Interactionist Perspective"
+        auth: "Jabareen, A., Agarwal, A., & Sandiford, P.J. · Academy of Management Proceedings, Copenhagen, Denmark, July 25–29, 2025"
+  - title: Work & Life
+    ct: 3 entries
+    items:
+      - year: "2025"
+        type: Conference paper
+        title: "The Kaleidoscope Model of Life: Rethinking Work, Family and life to examine their reciprocal relationships"
+        auth: "Magin, L., Agarwal, A., & Sandiford, P.J. · WORK2025 Conference, Turku, Finland, August 20–22, 2025"
+      - year: "2025"
+        type: Conference paper
+        title: "The Kaleidoscope Model of Life: Time to Rethink Work and Life in Separate Domains for Sustainable Workforce Well-being"
+        auth: "Magin, L., Agarwal, A., & Sandiford, P.J. · 11th International Conference on Business, Management and Economics, Paris, France, August 14–16, 2025"
+      - year: "2025"
+        type: Conference paper
+        title: "The Kaleidoscope Model of Life: Time to Rethink Work and Life in Separate Domains"
+        auth: "Magin, L., Agarwal, A., & Sandiford, P.J. · Higher Degree by Research (HDR) Arts, Business, Law and Economics (ABLE) Conference, the Adelaide Wine Centre, the University of Adelaide, South Australia, April 30, 2025"
+  - title: MBA
+    ct: 3 entries
     items:
       - year: "2024"
         type: Conference proceedings
         title: "Reflecting on the MBA degree: Waving a magic wand and/or grasping a nettle?"
         auth: "Agarwal, A., & Hallo, L. · Academy of Management Proceedings, Chicago: IL"
+      - year: "2024"
+        type: Conference paper
+        title: "Reflecting on the MBA degree: Waving a magic wand and/or grasping the nettle?"
+        auth: "Agarwal, A. · Academy of Management Conference, Management Education Division (MED), PDW, Chicago, August 13, 2024"
       - year: "2019"
         type: Conference proceedings
         title: "Exploring the 'X Factor' to Excavate the Value of an MBA"
@@ -164,8 +206,12 @@ pubGroups:
         title: Enhancing Farmer Involvement in Grain Research and Decision-Making
         auth: "Agarwal, A., Hallo, L., & Gulati, R. · Academy of International Business Oceania Symposia, Adelaide, November 24, 2023"
   - title: Teaching and Learning & Academia
-    ct: 14 entries
+    ct: 15 entries
     items:
+      - year: "2026"
+        type: Book chapter
+        title: "Communities of practice in Australian honours: A practical and theoretical analysis"
+        auth: "Sandiford, P.J., Schührer, S., & Agarwal, A. · In S. Pattinson (Ed.), Exploring Communities of Practice in Higher Education: Building an Inclusive University Culture (1st ed., pp. 34–54), Routledge: UK. https://doi.org/10.4324/9781003504993"
       - year: "2025"
         type: Book chapter
         title: Organizational Behaviour Course with Reflective Thinking and Student-Centric Experiential Learning Approach

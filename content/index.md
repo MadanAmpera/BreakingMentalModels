@@ -62,7 +62,7 @@ tiles:
     foot: Biography · CV · Awards
     to: /about
   - roman: ii
-    countBold: "46"
+    countBold: "73"
     countText: Publications
     title: Research
     description: Publications across four pillars — creative reflexivity, teaching & learning, leadership & teams, and people & organisations — including FT50 and Academy of Management work.
