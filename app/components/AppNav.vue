@@ -14,7 +14,8 @@ const open = ref(false)
   <nav class="site">
     <div class="wrap">
       <NuxtLink class="brand" to="/">
-        <span class="mark"><i /><i /><i /></span><b>B / M / M</b>
+        <span class="logo"><img src="/brand/owl-nav.png" width="30" height="52" alt="" /></span>
+        <span class="wm"><b>Breaking Mental Models</b><small>Dr. Ankit Agarwal</small></span>
       </NuxtLink>
 
       <div class="navlinks">

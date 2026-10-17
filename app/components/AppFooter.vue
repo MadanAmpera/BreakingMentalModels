@@ -13,13 +13,16 @@ const year = new Date().getFullYear()
   <footer class="site">
     <div class="wrap">
       <div class="colophon">
-        <div>
-          <NuxtLink class="brand" to="/">
-            <span class="mark"><i /><i /><i /></span><b>B / M / M</b>
+        <div class="seal">
+          <NuxtLink class="logo" to="/" aria-label="Breaking Mental Models — home">
+            <img src="/brand/owl-footer.png" width="87" height="150" alt="" />
           </NuxtLink>
-          <p style="color: var(--ink-2); font-size: 14.5px; margin-top: 16px; max-width: 34ch;">
-            Dr. Ankit Agarwal — educator, researcher, and lifelong learner. Adelaide, South Australia.
-          </p>
+          <div>
+            <NuxtLink class="brand" to="/"><b>B / M / M</b></NuxtLink>
+            <p style="color: var(--ink-2); font-size: 14.5px; margin-top: 16px; max-width: 34ch;">
+              Dr. Ankit Agarwal — educator, researcher, and lifelong learner. Adelaide, South Australia.
+            </p>
+          </div>
         </div>
 
         <div>

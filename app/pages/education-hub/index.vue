@@ -171,7 +171,7 @@ const catLabel: Record<string, string> = {
 }
 .col-head {
   position: sticky;
-  top: 64px;
+  top: 76px;
   background: var(--paper);
   z-index: 3;
   padding: 28px 24px 22px;
