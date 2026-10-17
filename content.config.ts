@@ -157,6 +157,8 @@ export default defineContentConfig({
           heading: z.string().optional(),
           headingEm: z.string().optional(),
           dek: z.string().optional(),
+          dekEm: z.string().optional(),
+          dekPost: z.string().optional(),
           author: z.string().optional(),
           readTime: z.string().optional(),
           updated: z.string().optional(),
