@@ -81,5 +81,5 @@ portrait:
   closingPost: ", and giving each other an opportunity to grow co-constructively."
   signature: — Ankit
   imageLabel: Portrait — Dr. Agarwal
-  image: ""
+  image: /portrait-ankit.jpg
 ---

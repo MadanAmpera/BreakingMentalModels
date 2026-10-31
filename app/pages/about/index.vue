@@ -81,6 +81,8 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'About' }]
   border-right: 2px solid var(--ink);
   border-radius: 0;
 }
+/* Keep the face in frame when the panel crops the landscape photo */
+.portrait .ph :deep(img) { object-position: 45% 30%; }
 @media (max-width: 820px) {
   .portrait .ph {
     border-right: 0;
