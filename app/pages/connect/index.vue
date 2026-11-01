@@ -37,33 +37,11 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
       </div>
     </section>
 
-    <!-- b · Two doors in -->
-    <section v-if="page.audiences?.length" class="section" style="padding-top: 0;">
-      <div class="wrap">
-        <div v-if="page.secB" class="sec-head">
-          <span class="rn">{{ page.secB.rn }}</span><h2>{{ page.secB.heading }}</h2>
-        </div>
-        <p v-if="page.secB?.lead" class="lead" style="max-width: 62ch;">{{ page.secB.lead }}</p>
-
-        <div class="aud">
-          <div v-for="(a, i) in page.audiences" :key="i" class="a">
-            <span v-if="a.ey" class="ey">{{ a.ey }}</span>
-            <h3>{{ a.heading }}</h3>
-            <p v-if="a.body">{{ a.body }}</p>
-            <ul v-if="a.items?.length">
-              <li v-for="(it, j) in a.items" :key="j"><b>{{ it.term }}</b> — {{ it.desc }}</li>
-            </ul>
-            <NuxtLink v-if="a.linkLabel" class="link-arrow" :to="a.linkTo">{{ a.linkLabel }} →</NuxtLink>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- c · Send a message (static mock form) -->
+    <!-- b · Send a message (static mock form) -->
     <section class="section" style="padding-top: 0;">
       <div class="wrap">
-        <div v-if="page.secC" :id="page.secC.id" class="sec-head">
-          <span class="rn">{{ page.secC.rn }}</span><h2>{{ page.secC.heading }}</h2>
+        <div v-if="page.secB" :id="page.secB.id" class="sec-head">
+          <span class="rn">{{ page.secB.rn }}</span><h2>{{ page.secB.heading }}</h2>
         </div>
         <p v-if="page.banner" class="client-banner">{{ page.banner }}</p>
         <div class="msg">
@@ -95,11 +73,11 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
       </div>
     </section>
 
-    <!-- d · Watch & follow -->
+    <!-- c · Watch & follow -->
     <section v-if="page.hub || page.socials?.length" class="section" style="padding-top: 0;">
       <div class="wrap">
-        <div v-if="page.secD" class="sec-head">
-          <span class="rn">{{ page.secD.rn }}</span><h2>{{ page.secD.heading }}</h2>
+        <div v-if="page.secC" class="sec-head">
+          <span class="rn">{{ page.secC.rn }}</span><h2>{{ page.secC.heading }}</h2>
         </div>
 
         <div v-if="page.hub" class="hub">
@@ -168,50 +146,6 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
 }
 .ch p { font-size: 14.5px; color: var(--ink-2); margin: 0; line-height: 1.5; }
 
-/* Audience split */
-.aud {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border: 2px solid var(--ink);
-  margin-top: 8px;
-}
-@media (max-width: 760px) {
-  .aud { grid-template-columns: 1fr; }
-}
-.aud .a {
-  padding: clamp(28px, 3.4vw, 44px);
-  border-left: 1px solid var(--ink);
-}
-.aud .a:first-child { border-left: 0; }
-@media (max-width: 760px) {
-  .aud .a { border-left: 0; border-top: 1px solid var(--ink); }
-  .aud .a:first-child { border-top: 0; }
-}
-.aud .a .ey {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-}
-.aud .a h3 {
-  font-family: var(--serif);
-  font-size: 26px;
-  font-weight: 500;
-  margin: 8px 0 12px;
-  letter-spacing: -0.01em;
-}
-.aud .a p { font-size: 15.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55; }
-.aud .a ul { margin: 0 0 18px; padding: 0; list-style: none; }
-.aud .a li {
-  font-size: 14.5px;
-  color: var(--ink-2);
-  padding: 9px 0;
-  border-top: 1px dashed var(--line-2);
-}
-.aud .a li b { font-family: var(--serif); font-weight: 600; color: var(--ink); }
-
 /* Message form (static mock) */
 .field { margin-bottom: 18px; }
 .field label {
@@ -265,7 +199,7 @@ const crumb = [{ label: 'Home', to: '/' }, { label: 'Connect' }]
 .hub p { margin: 6px 0 0; color: var(--ink-on-dark-2); font-size: 14.5px; max-width: 48ch; }
 .socials {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);

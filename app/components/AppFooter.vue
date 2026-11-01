@@ -18,7 +18,7 @@ const year = new Date().getFullYear()
             <img src="/brand/owl-footer.png" width="87" height="150" alt="" />
           </NuxtLink>
           <div>
-            <NuxtLink class="brand" to="/"><b>B / M / M</b></NuxtLink>
+            <NuxtLink class="brand" to="/"><b>Breaking Mental Models</b></NuxtLink>
             <p style="color: var(--ink-2); font-size: 14.5px; margin-top: 16px; max-width: 34ch;">
               Dr. Ankit Agarwal — educator, researcher, and lifelong learner. Adelaide, South Australia.
             </p>
@@ -40,7 +40,6 @@ const year = new Date().getFullYear()
 
       <div class="foot-bottom">
         <span>© {{ year }} Breaking Mental Models</span>
-        <span>Set in Newsreader &amp; IBM Plex</span>
       </div>
     </div>
   </footer>

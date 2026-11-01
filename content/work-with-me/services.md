@@ -6,8 +6,7 @@ hero:
   headingAccent: conviction.
   lede: Each service is grounded in psychosocial safety and shaped around your organisation's readiness — never a programme bought off a shelf. We don't train people into new behaviours; we build the environments in which new behaviours become natural.
 serviceGroups:
-  - rn: Chapter 1
-    title: Individual & team interventions
+  - title: Individual & team interventions
     count: 04 services
     services:
       - rn: i
@@ -74,8 +73,7 @@ serviceGroups:
           - d: 1 day
             w: Feedback & recommendations session with stakeholders
         bestFor: Organisations whose performance frameworks may be quietly driving the behaviours they're trying to change.
-  - rn: Chapter 2
-    title: Organisational development
+  - title: Organisational development
     count: 04 solutions
     lead: Beyond individual interventions, lasting change requires structural, cultural and strategic transformation — the deeper patterns that shape how your organisation plans, adapts, leads and performs.
     services:

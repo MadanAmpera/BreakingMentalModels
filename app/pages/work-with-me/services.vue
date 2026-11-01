@@ -40,7 +40,7 @@ function isLastService(gi: number, si: number) {
     >
       <div class="wrap">
         <div class="grp-head">
-          <span class="rn">{{ group.rn }}</span>
+          <span v-if="group.rn" class="rn">{{ group.rn }}</span>
           <h2>{{ group.title }}</h2>
           <span v-if="group.count" class="c">{{ group.count }}</span>
         </div>

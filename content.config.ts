@@ -67,7 +67,6 @@ export default defineContentConfig({
         imprint: z.string().optional(),
         epigraphQuote: z.string().optional(),
         epigraphAttribution: z.string().optional(),
-        contentsYear: z.string().optional(),
         // Two audience doors directly under the hero (students / organisations)
         doors: z.array(z.object({
           eyebrow: z.string().optional(),
@@ -276,7 +275,7 @@ export default defineContentConfig({
 
         // Services: two grouped chapters of services + a services-at-a-glance table
         serviceGroups: z.array(z.object({
-          rn: z.string(),
+          rn: z.string().optional(),
           title: z.string(),
           count: z.string().optional(),
           lead: z.string().optional(),
@@ -424,21 +423,12 @@ export default defineContentConfig({
         secA: secHead,
         secB: secHead,
         secC: secHead,
-        secD: secHead,
 
-        // Landing: contact channels, audience split, socials hub
+        // Landing: contact channels, socials hub
         channels: z.array(z.object({
           lab: z.string(),
           val: z.string(),
           body: z.string().optional(),
-        })).optional(),
-        audiences: z.array(z.object({
-          ey: z.string().optional(),
-          heading: z.string(),
-          body: z.string().optional(),
-          items: z.array(z.object({ term: z.string(), desc: z.string() })).optional(),
-          linkLabel: z.string().optional(),
-          linkTo: z.string().optional(),
         })).optional(),
         hub: z.object({
           title: z.string().optional(),
