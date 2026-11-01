@@ -49,7 +49,6 @@ useSeoMeta({
       <div class="wrap">
         <div class="contents-head">
           <span class="t">{{ page.tilesLabel ?? 'Contents' }}</span>
-          <span class="t" style="color: var(--ink-3);">{{ page.contentsYear }}</span>
         </div>
         <div class="toc-grid">
           <NuxtLink v-for="tile in page.tiles" :key="tile.to" class="toc-tile" :to="tile.to">
@@ -81,7 +80,7 @@ useSeoMeta({
         <div class="feature">
           <Figure :src="page.featureImage" :label="page.featureImageLabel" />
           <div class="body">
-            <span class="eyebrow">{{ page.featureEyebrow }}</span>
+            <span v-if="page.featureEyebrow" class="eyebrow">{{ page.featureEyebrow }}</span>
             <h2 class="h2" style="margin: 14px 0; max-width: 16ch;">{{ page.featureHeading }}</h2>
             <p style="color: var(--ink-2); max-width: 48ch;">{{ page.featureBody }}</p>
             <NuxtLink class="link-arrow" :to="page.featureLinkTo" style="margin-top: 20px;">
@@ -95,7 +94,7 @@ useSeoMeta({
     <!-- CTA -->
     <section class="section dark-section cta">
       <div class="wrap">
-        <span class="eyebrow">{{ page.ctaEyebrow }}</span>
+        <span v-if="page.ctaEyebrow" class="eyebrow">{{ page.ctaEyebrow }}</span>
         <p class="display">{{ page.ctaDisplay }}</p>
         <div style="display: flex; gap: 14px; justify-content: center; margin-top: 32px; flex-wrap: wrap;">
           <NuxtLink class="btn btn-primary" :to="page.ctaPrimaryTo" style="border-radius: 0;">

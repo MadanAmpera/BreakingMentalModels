@@ -1,15 +1,12 @@
 ---
 title: Breaking Mental Models — Dr. Ankit Agarwal
 byline: Education, research & honest conversation — on the environments that shape us.
-contentsYear: "2026"
 ctaDisplay: Say the thing. Have the conversation. Break the model.
-ctaEyebrow: Colophon & contact
 ctaPrimaryLabel: Get in touch
 ctaPrimaryTo: /connect
 epigraphAttribution: The thesis of Breaking Mental Models
 epigraphQuote: There is no such thing as a demotivated person. Motivation never disappears — it simply redirects.
 featureBody: Neither the water nor the ice chose to change — they responded to the environment they were placed in, and stayed in it long enough. Change the environment. Sustain it. The transformation follows.
-featureEyebrow: Plate I · The core idea
 featureHeading: The environment is the intervention.
 featureImageLabel: Client image — ice → water
 featureLinkLabel: Read the philosophy →
@@ -22,18 +19,14 @@ kicker: An academic platform by Dr. Ankit Agarwal
 doors:
   - eyebrow: A · For students & learners
     title: Learn management
-    titleAccent: through your own life.
+    titleAccent: through your own life experience.
     body: Short video lessons on every major Organisational Behaviour theory. Each one starts in your world — family, friends, school, sport — before it reaches the workplace.
     listLabel: Video lessons
     items:
       - title: Foundational OB models
-        meta: Start here
       - title: "Motivation: content theories"
-        meta: Individual
       - title: Group dynamics & teamwork
-        meta: Group
       - title: Organisational culture
-        meta: Organisational
     linkLabel: Start learning
     to: /students
   - eyebrow: B · For practitioners & organisations
@@ -43,13 +36,9 @@ doors:
     listLabel: Services
     items:
       - title: Consulting
-        meta: 3 days + follow-ups
       - title: Training
-        meta: 2 days + organised workshops
       - title: Coaching
-        meta: 4 sessions / month
       - title: Assessment
-        meta: 2 weeks + feedback & recommendations
     linkLabel: Explore services
     to: /organisations
 tilesLabel: Portfolio & more
